@@ -12,7 +12,7 @@ $ npm install cardscript-schema --save
 ## <a name="usage"></a>Usage
 
 ```javascript
-const cardscriptSchema = require('cardscript-schema')
+const cardscriptSchema = require('@wmfs/cardscript-schema')
 
 const result = cardscriptSchema.validateForm(
   {

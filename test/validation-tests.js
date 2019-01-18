@@ -4,7 +4,7 @@
 const validator = require('./../lib/').validateForm
 const chai = require('chai')
 const expect = chai.expect
-const { simple, complex } = require('cardscript-examples')
+const { simple, complex } = require('@wmfs/cardscript-examples')
 
 describe('Run some schema validation tests', () => {
   it('should prove a simple form validates correctly using default (simple) formatter', () => {
