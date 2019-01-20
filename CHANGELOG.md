@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/wmfs/cardscript-schema/compare/v1.0.0...v1.0.1) (2019-01-20)
+
+
+### 🐛 Bug Fixes
+
+* Ignore package-lock.json files. ([ec4acb8](https://github.com/wmfs/cardscript-schema/commit/ec4acb8))
+
 # 1.0.0 (2019-01-18)
 
 
