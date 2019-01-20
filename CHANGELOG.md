@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/wmfs/cardscript-schema/compare/v1.1.0...v1.2.0) (2019-01-20)
+
+
+### ✨ Features
+
+* Provide a "safe" version of manifest type, for use in URLs etc. ([2868c5b](https://github.com/wmfs/cardscript-schema/commit/2868c5b))
+
+
+### 🐛 Bug Fixes
+
+* Tweak of Regex to format safe version of type. ([af1d5fe](https://github.com/wmfs/cardscript-schema/commit/af1d5fe))
+
 # [1.1.0](https://github.com/wmfs/cardscript-schema/compare/v1.0.1...v1.1.0) (2019-01-20)
 
 
