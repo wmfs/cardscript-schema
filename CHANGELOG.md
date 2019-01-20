@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/wmfs/cardscript-schema/compare/v1.0.1...v1.1.0) (2019-01-20)
+
+
+### ✨ Features
+
+* Provide a "safe" version of manifest type, for use in URLs etc. ([ae07f03](https://github.com/wmfs/cardscript-schema/commit/ae07f03))
+
 ## [1.0.1](https://github.com/wmfs/cardscript-schema/compare/v1.0.0...v1.0.1) (2019-01-20)
 
 
