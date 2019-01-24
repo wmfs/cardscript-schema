@@ -51,6 +51,10 @@
                 "subscription": {
                   "type": "boolean",
                   "description": "Whether a user can subscribe to this card."
+                },
+                "tableOfContents": {
+                  "type": "boolean",
+                  "description": "Whether to display the table of contents."
                 }
               }
             }
