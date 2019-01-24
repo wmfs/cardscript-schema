@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/wmfs/cardscript-schema/compare/v1.2.0...v1.3.0) (2019-01-24)
+
+
+### ✨ Features
+
+* created Action.PushCard and Action.ReplaceCard ([cb1a479](https://github.com/wmfs/cardscript-schema/commit/cb1a479))
+
 # [1.2.0](https://github.com/wmfs/cardscript-schema/compare/v1.1.0...v1.2.0) (2019-01-20)
 
 
