@@ -60,8 +60,68 @@
         },
         {
           "$ref": "#/definitions/Action.Save"
+        },
+        {
+          "$ref": "#/definitions/Action.PushCard"
+        },
+        {
+          "$ref": "#/definitions/Action.ReplaceCard"
         }
       ]
+    },
+    "Action.PushCard": {
+      "additionalProperties": true,
+      "description": "When invoked this will push the new card on the routing history.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.PushCard\"`."
+        },
+        "title": {
+          "type": "string",
+          "description": "Label for button or link that represents this action."
+        },
+        "stateMachineName": {
+          "type": "string",
+          "description": "The state machine to launch."
+        },
+        "input": {
+          "type": "object",
+          "description": "The input to launch with."
+        }
+      },
+      "required": [
+        "type",
+        "stateMachineName"
+      ],
+      "type": "object"
+    },
+    "Action.ReplaceCard": {
+      "additionalProperties": true,
+      "description": "When invoked this will replace the current entry in the history with the new route.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.ReplaceCard\"`."
+        },
+        "title": {
+          "type": "string",
+          "description": "Label for button or link that represents this action."
+        },
+        "stateMachineName": {
+          "type": "string",
+          "description": "The state machine to launch."
+        },
+        "input": {
+          "type": "object",
+          "description": "The input to launch with."
+        }
+      },
+      "required": [
+        "type",
+        "stateMachineName"
+      ],
+      "type": "object"
     },
     "Action.OpenUrl": {
       "additionalProperties": true,
