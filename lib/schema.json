@@ -10,6 +10,72 @@
     }
   ],
   "properties": {
+    "meta": {
+      "type": "object",
+      "description": "Holds meta data.",
+      "properties": {
+        "card": {
+          "type": "object",
+          "description": "Meta information about this card",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the card, kebab cased."
+            },
+            "hash": {
+              "type": "string",
+              "description": "Hash of the card."
+            },
+            "version": {
+              "type": "string",
+              "description": "Version of this card."
+            },
+            "author": {
+              "type": "string",
+              "description": "Author of this card."
+            }
+          }
+        },
+        "ui": {
+          "type": "object",
+          "description": "Data to be shown on the card interface.",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Title to be displayed on the card."
+            },
+            "controls": {
+              "type": "object",
+              "description": "Controls for the card",
+              "properties": {
+                "subscription": {
+                  "type": "boolean",
+                  "description": "Whether a user can subscribe to this card."
+                }
+              }
+            }
+          }
+        },
+        "data": {
+          "type": "object",
+          "description": "Data required for the card.",
+          "properties": {
+            "classification": {
+              "type": "string",
+              "description": "Classification of the card."
+            },
+            "idTemplate": {
+              "type": "string",
+              "description": "ID template of the card."
+            },
+            "category": {
+              "type": "string",
+              "description": "Category of the card."
+            }
+          }
+        }
+      }
+    },
     "version": {
       "type": "string",
       "description": "Schema version that this card requires. If a client is **lower** than this version, the `fallbackText` will be rendered.",
