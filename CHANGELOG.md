@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/wmfs/cardscript-schema/compare/v1.3.0...v1.4.0) (2019-01-24)
+
+
+### ✨ Features
+
+* added meta object to schema ([957076d](https://github.com/wmfs/cardscript-schema/commit/957076d))
+
 # [1.3.0](https://github.com/wmfs/cardscript-schema/compare/v1.2.0...v1.3.0) (2019-01-24)
 
 
