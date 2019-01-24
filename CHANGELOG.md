@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/wmfs/cardscript-schema/compare/v1.4.0...v1.5.0) (2019-01-24)
+
+
+### ✨ Features
+
+* added toc control to meta ([504a7cc](https://github.com/wmfs/cardscript-schema/commit/504a7cc))
+
 # [1.4.0](https://github.com/wmfs/cardscript-schema/compare/v1.3.0...v1.4.0) (2019-01-24)
 
 
