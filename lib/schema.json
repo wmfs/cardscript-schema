@@ -1787,6 +1787,10 @@
         }
       ],
       "properties": {
+        "id": {
+          "type": "string",
+          "description": "A unique identifier associated with the element."
+        },
         "type": {
           "type": "string",
           "description": "Must be `\"Table\"`.",
@@ -1829,6 +1833,7 @@
         }
       },
       "required": [
+        "id",
         "type",
         "arrayPath",
         "columns"
