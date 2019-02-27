@@ -1453,6 +1453,28 @@
           "enum": [
             "Input.ApiLookup"
           ]
+        },
+        "selectionType": {
+          "type": "string",
+          "description": "Whether the use can select a value.",
+          "enum": [
+            "none",
+            "single",
+            "multi"
+          ]
+        },
+        "endpoint": {
+          "type": "object",
+          "description": "The endpoint to gather results from.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the endpoint"
+            }
+          }
+        },
+        "parametersCard": {
+          "$ref": "#/definitions/AdaptiveCard"
         }
       },
       "required": [
