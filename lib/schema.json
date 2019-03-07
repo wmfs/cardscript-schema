@@ -1619,6 +1619,14 @@
           "enum": [
             "Input.TelephoneNumber"
           ]
+        },
+        "connectionType": {
+          "type": "string",
+          "description": "What type of phone is this number related to?.",
+          "enum": [
+            "mobile",
+            "landline"
+          ]
         }
       },
       "required": [
