@@ -1,3 +1,16 @@
+# [1.6.0](https://github.com/wmfs/cardscript-schema/compare/v1.5.0...v1.6.0) (2019-03-07)
+
+
+### ✨ Features
+
+* Add telephone number connection-types (mobile/landline). ([ff70e0c](https://github.com/wmfs/cardscript-schema/commit/ff70e0c))
+
+
+### 📦 Code Refactoring
+
+* progress on input.apilookup ([608f97f](https://github.com/wmfs/cardscript-schema/commit/608f97f))
+* WIP adjusted cardscript table to allow opening modal ([dc5ef2f](https://github.com/wmfs/cardscript-schema/commit/dc5ef2f))
+
 # [1.5.0](https://github.com/wmfs/cardscript-schema/compare/v1.4.0...v1.5.0) (2019-01-24)
 
 
