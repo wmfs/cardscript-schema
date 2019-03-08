@@ -523,6 +523,10 @@
           "type": "string",
           "description": "Text to display."
         },
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to display for the ChoiceSet as a whole, not an individual value."
+        },
         "value": {
           "type": "string",
           "description": "The raw value for the choice. **NOTE:** do not use a `,` in the value, since a `ChoiceSet` with `isMultiSelect` set to `true` returns a comma-delimited string of choice values."
@@ -1357,6 +1361,11 @@
             "Input.Email"
           ]
         },
+        ,
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to prefix email input with."
+        },
         "placeholder": {
           "type": "string",
           "description": "Description of the input desired. Displayed when no text has been input."
@@ -1553,6 +1562,10 @@
           "enum": [
             "Input.Name"
           ]
+        },
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to prefix name input with."
         }
       },
       "required": [
@@ -1627,6 +1640,10 @@
             "mobile",
             "landline"
           ]
+        },
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to prefix telephone-number input with."
         }
       },
       "required": [
