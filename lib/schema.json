@@ -1361,7 +1361,6 @@
             "Input.Email"
           ]
         },
-        ,
         "icon": {
           "type": "string",
           "description": "Name of an icon to prefix email input with."
