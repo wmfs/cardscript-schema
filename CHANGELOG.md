@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/wmfs/cardscript-schema/compare/v1.6.0...v1.7.0) (2019-03-08)
+
+
+### ✨ Features
+
+* Add support for icon prefixes. ([b8afa8a](https://github.com/wmfs/cardscript-schema/commit/b8afa8a))
+* Add support for icon prefixes. ([81858c1](https://github.com/wmfs/cardscript-schema/commit/81858c1))
+
 # [1.6.0](https://github.com/wmfs/cardscript-schema/compare/v1.5.0...v1.6.0) (2019-03-07)
 
 
