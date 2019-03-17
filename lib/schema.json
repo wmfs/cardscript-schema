@@ -114,6 +114,24 @@
     "version"
   ],
   "definitions": {
+    "CardscriptField": {
+      "additionalProperties": true,
+      "description": "Adds various properties to extend base Input types.",
+      "properties": {
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to display alongside this element."
+        },
+        "title": {
+          "type": "string",
+          "description": "Strong text to clearly identify the intent of the element.",
+          "examples": [
+            "Your date of birth"
+          ]
+        }
+      },
+      "type": "object"
+    },
     "Action": {
       "anyOf": [
         {
@@ -525,7 +543,7 @@
         },
         "icon": {
           "type": "string",
-          "description": "Name of an icon to display for the ChoiceSet as a whole, not an individual value."
+          "description": "Name of an icon to display for the choice."
         },
         "value": {
           "type": "string",
@@ -1145,6 +1163,9 @@
       "allOf": [
         {
           "$ref": "#/definitions/CardElement"
+        },
+        {
+          "$ref": "#/definitions/CardscriptField"
         }
       ],
       "properties": {
@@ -1347,6 +1368,9 @@
       "allOf": [
         {
           "$ref": "#/definitions/CardElement"
+        },
+        {
+          "$ref": "#/definitions/CardscriptField"
         }
       ],
       "properties": {
@@ -1364,10 +1388,6 @@
         "icon": {
           "type": "string",
           "description": "Name of an icon to prefix email input with."
-        },
-        "placeholder": {
-          "type": "string",
-          "description": "Description of the input desired. Displayed when no text has been input."
         }
       },
       "required": [
