@@ -1,3 +1,16 @@
+# [1.8.0](https://github.com/wmfs/cardscript-schema/compare/v1.7.0...v1.8.0) (2019-03-28)
+
+
+### ✨ Features
+
+* begin to add List to schema ([2c02b5e](https://github.com/wmfs/cardscript-schema/commit/2c02b5e))
+* Beginnings of Cardscript JSON-schema/docs refactor. ([31f97b0](https://github.com/wmfs/cardscript-schema/commit/31f97b0))
+
+
+### 🐛 Bug Fixes
+
+* tests ([2d5c54f](https://github.com/wmfs/cardscript-schema/commit/2d5c54f))
+
 # [1.7.0](https://github.com/wmfs/cardscript-schema/compare/v1.6.0...v1.7.0) (2019-03-08)
 
 
