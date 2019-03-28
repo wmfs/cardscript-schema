@@ -424,6 +424,9 @@
               "$ref": "#/definitions/Table"
             },
             {
+              "$ref": "#/definitions/List"
+            },
+            {
               "$ref": "#/definitions/Media"
             },
             {
@@ -1841,6 +1844,42 @@
         "type",
         "id",
         "title"
+      ]
+    },
+    "List": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays text, allowing control over font sizes, weight, and color.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "A unique identifier associated with the element."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"List\"`.",
+          "enum": [
+            "List"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Title displayed for the `List`."
+        },
+        "arrayPath": {
+          "type": "string",
+          "description": "Points to the array of data to be displayed."
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "arrayPath"
       ]
     },
     "Table": {
