@@ -695,6 +695,10 @@
             "TabSet"
           ]
         },
+        "id": {
+          "type": "string",
+          "description": "A unique identifier associated with the element."
+        },
         "tabs": {
           "type": "array",
           "description": "The array of `Tabs` to divide content.",
@@ -703,7 +707,7 @@
           }
         }
       },
-      "required": ["type"]
+      "required": ["id"]
     },
     "ColumnSet": {
       "additionalProperties": true,
