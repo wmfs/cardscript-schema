@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/wmfs/cardscript-schema/compare/v1.8.0...v1.9.0) (2019-05-22)
+
+
+### ✨ Features
+
+* TabSet has id now ([20c7c1b](https://github.com/wmfs/cardscript-schema/commit/20c7c1b))
+
 # [1.8.0](https://github.com/wmfs/cardscript-schema/compare/v1.7.0...v1.8.0) (2019-03-28)
 
 
