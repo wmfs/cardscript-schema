@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/wmfs/cardscript-schema/compare/v1.9.0...v1.10.0) (2019-05-29)
+
+
+### ✨ Features
+
+* add type to media component ([f2ad3ec](https://github.com/wmfs/cardscript-schema/commit/f2ad3ec))
+
 # [1.9.0](https://github.com/wmfs/cardscript-schema/compare/v1.8.0...v1.9.0) (2019-05-22)
 
 
