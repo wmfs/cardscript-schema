@@ -892,6 +892,14 @@
       "description": "Defines a source for a Media element",
       "version": "1.1",
       "properties": {
+        "type": {
+          "type": "string",
+          "description": "Whether the media is audio or video.",
+          "enum": [
+            "video",
+            "audio"
+          ]
+        },
         "mimeType": {
           "type": "string",
           "description": "Mime type of associated media (e.g. `\"video/mp4\"`)."
@@ -903,6 +911,7 @@
         }
       },
       "required": [
+        "type",
         "mimeType",
         "url"
       ]
