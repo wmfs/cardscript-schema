@@ -1258,6 +1258,10 @@
         "value": {
           "type": "string",
           "description": "The initial value for this field expressed in ISO-8601 format."
+        },
+        "clearable": {
+          "type": "boolean",
+          "description": "Whether the user can clear the data."
         }
       },
       "required": [
@@ -1710,6 +1714,10 @@
         "placeholder": {
           "type": "string",
           "description": "Description of the input desired. Displayed when no text has been input."
+        },
+        "clearable": {
+          "type": "boolean",
+          "description": "Whether the user can clear the data."
         }
       },
       "required": [
