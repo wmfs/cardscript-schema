@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/wmfs/cardscript-schema/compare/v1.10.0...v1.11.0) (2019-06-12)
+
+
+### ✨ Features
+
+* add clearable option for Input.Date and Input.DateTime ([8b92d1a](https://github.com/wmfs/cardscript-schema/commit/8b92d1a))
+
 # [1.10.0](https://github.com/wmfs/cardscript-schema/compare/v1.9.0...v1.10.0) (2019-05-29)
 
 
