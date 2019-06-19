@@ -1,3 +1,21 @@
+# [1.13.0](https://github.com/wmfs/cardscript-schema/compare/v1.12.0...v1.13.0) (2019-06-19)
+
+
+### ✨ Features
+
+* add new actions to refresh watching and tasks ([98325c2](https://github.com/wmfs/cardscript-schema/commit/98325c2))
+* after submit hook and refresh remit action ([881933b](https://github.com/wmfs/cardscript-schema/commit/881933b))
+
+
+### 📦 Code Refactoring
+
+* missing changes to change log ([58e8a7d](https://github.com/wmfs/cardscript-schema/commit/58e8a7d))
+
+
+### 🚨 Tests
+
+* update expected value ([0321992](https://github.com/wmfs/cardscript-schema/commit/0321992))
+
 # [1.12.0](https://github.com/wmfs/cardscript-schema/compare/v1.11.0...v1.12.0) (2019-06-17)
 
 
