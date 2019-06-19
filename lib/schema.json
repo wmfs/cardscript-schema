@@ -10,7 +10,7 @@
     }
   ],
   "properties": {
-    "meta": {
+    "templateMeta": {
       "type": "object",
       "description": "Holds meta data.",
       "properties": {
@@ -75,6 +75,24 @@
             "category": {
               "type": "string",
               "description": "Category of the card."
+            }
+          }
+        }
+      }
+    },
+    "hooks": {
+      "type": "object",
+      "description": "Defines actions to be taken during different stages of a card execution",
+      "properties": {
+        "afterSubmit": {
+          "type": "object",
+          "description": "Actions to be executed in order after the card has been submitted.",
+          "properties": {
+            "actions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Action"
+              }
             }
           }
         }
@@ -154,8 +172,59 @@
         },
         {
           "$ref": "#/definitions/Action.ReplaceCard"
+        },
+        {
+          "$ref": "#/definitions/Action.RefreshRemit"
+        },
+        {
+          "$ref": "#/definitions/Action.RefreshTasks"
+        },
+        {
+          "$ref": "#/definitions/Action.RefreshWatching"
         }
       ]
+    },
+    "Action.RefreshTasks": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the users tasks.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshTasks\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "Action.RefreshWatching": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the users watched cards.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshWatching\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "Action.RefreshRemit": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the app's remit.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshRemit\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
     },
     "Action.PushCard": {
       "additionalProperties": true,
