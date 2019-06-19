@@ -175,8 +175,42 @@
         },
         {
           "$ref": "#/definitions/Action.RefreshRemit"
+        },
+        {
+          "$ref": "#/definitions/Action.RefreshTasks"
+        },
+        {
+          "$ref": "#/definitions/Action.RefreshWatching"
         }
       ]
+    },
+    "Action.RefreshTasks": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the users tasks.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshTasks\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "Action.RefreshWatching": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the users watched cards.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshWatching\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
     },
     "Action.RefreshRemit": {
       "additionalProperties": true,
