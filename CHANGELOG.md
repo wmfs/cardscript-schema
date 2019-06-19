@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/wmfs/cardscript-schema/compare/v1.11.0...v1.12.0) (2019-06-17)
+
+
+### ✨ Features
+
+* after submit hook and refresh remit action ([7ac6ba1](https://github.com/wmfs/cardscript-schema/commit/7ac6ba1))
+
+
+### 🚨 Tests
+
+* update expected value ([ca6c0d8](https://github.com/wmfs/cardscript-schema/commit/ca6c0d8))
+
 # [1.11.0](https://github.com/wmfs/cardscript-schema/compare/v1.10.0...v1.11.0) (2019-06-12)
 
 
