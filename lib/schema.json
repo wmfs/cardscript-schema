@@ -593,6 +593,9 @@
             },
             {
               "$ref": "#/definitions/CardList"
+            },
+            {
+              "$ref": "#/definitions/Graph"
             }
           ]
         }
@@ -1024,6 +1027,31 @@
         }
       },
       "required": ["type", "dataPath"]
+    },
+    "Graph": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays a graph.",
+      "version": "1.1",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Graph\"`.",
+          "enum": [
+            "Graph"
+          ]
+        }
+      },
+      "required": ["id", "type"]
     },
     "Map": {
       "additionalProperties": true,
