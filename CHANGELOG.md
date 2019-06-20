@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/wmfs/cardscript-schema/compare/v1.13.0...v1.14.0) (2019-06-20)
+
+
+### ✨ Features
+
+* added to graph component schema ([69e46bb](https://github.com/wmfs/cardscript-schema/commit/69e46bb))
+
 # [1.13.0](https://github.com/wmfs/cardscript-schema/compare/v1.12.0...v1.13.0) (2019-06-19)
 
 
