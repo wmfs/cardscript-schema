@@ -1,7 +1,7 @@
 # cardscript-schema
 
 [![Tymly Cardscript](https://img.shields.io/badge/tymly-cardscript-blue.svg)](https://tymly.io/)
-[![Build Status](https://travis-ci.com/wmfs/cardscript-schema.svg?branch=master)](https://travis-ci.com/wmfs/cardscript-schema)
+[![CircleCI](https://circleci.com/gh/wmfs/cardscript-schema.svg?style=svg)](https://circleci.com/gh/wmfs/cardscript-schema)
 [![npm (scoped)](https://img.shields.io/npm/v/@wmfs/cardscript-schema.svg)](https://www.npmjs.com/package/@wmfs/cardscript-schema) 
 [![codecov](https://codecov.io/gh/wmfs/cardscript-schema/branch/master/graph/badge.svg)](https://codecov.io/gh/wmfs/cardscript-schema) 
 [![CodeFactor](https://www.codefactor.io/repository/github/wmfs/cardscript-schema/badge)](https://www.codefactor.io/repository/github/wmfs/cardscript-schema) 
