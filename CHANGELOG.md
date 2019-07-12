@@ -1,3 +1,32 @@
+# [1.15.0](https://github.com/wmfs/cardscript-schema/compare/v1.14.0...v1.15.0) (2019-07-12)
+
+
+### 🛠 Builds
+
+* **deps:** update lodash requirement from 4.17.11 to 4.17.14 ([b4f3f2d](https://github.com/wmfs/cardscript-schema/commit/b4f3f2d))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([c390dfb](https://github.com/wmfs/cardscript-schema/commit/c390dfb))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([aca07f7](https://github.com/wmfs/cardscript-schema/commit/aca07f7))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([3f50d4f](https://github.com/wmfs/cardscript-schema/commit/3f50d4f))
+* **deps-dev:** update nyc requirement from 13.1.0 to 14.1.1 ([5b36481](https://github.com/wmfs/cardscript-schema/commit/5b36481))
+* **deps-dev:** update semantic-release requirement ([fed346d](https://github.com/wmfs/cardscript-schema/commit/fed346d))
+* **deps-dev:** update semantic-release requirement ([59d1cc4](https://github.com/wmfs/cardscript-schema/commit/59d1cc4))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge to readme ([386d17d](https://github.com/wmfs/cardscript-schema/commit/386d17d))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([9f761ce](https://github.com/wmfs/cardscript-schema/commit/9f761ce))
+* **travis:** Remove Travis config ([de15b99](https://github.com/wmfs/cardscript-schema/commit/de15b99))
+
+
+### ♻️ Chores
+
+* **deps-dev:** update mocha requirement from 5.2.0 to 6.1.4 ([0e69dc8](https://github.com/wmfs/cardscript-schema/commit/0e69dc8))
+
 # [1.14.0](https://github.com/wmfs/cardscript-schema/compare/v1.13.0...v1.14.0) (2019-06-20)
 
 
