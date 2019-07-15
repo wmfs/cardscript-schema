@@ -2029,6 +2029,10 @@
           "type": "string",
           "description": "Points to the array of data to be displayed."
         },
+        "rowKey": {
+          "type": "string",
+          "description": "The property that uniquely identifies the row."
+        },
         "columns": {
           "type": "array",
           "items": {
@@ -2053,6 +2057,21 @@
           "type": "integer",
           "description": "Limit the results per page.",
           "default": 10
+        },
+        "showLaunches": {
+          "type": "boolean",
+          "description": "Whether or not to show a menu of actions.",
+          "default": "false"
+        },
+        "selectionType": {
+          "type": "string",
+          "description": "Whether the use can select a value.",
+          "enum": [
+            "none",
+            "single",
+            "multi"
+          ],
+          "default": "none"
         }
       },
       "required": [
