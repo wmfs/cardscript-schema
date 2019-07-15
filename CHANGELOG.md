@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/wmfs/cardscript-schema/compare/v1.15.0...v1.16.0) (2019-07-15)
+
+
+### ✨ Features
+
+* changes to Table ([dbb0c6e](https://github.com/wmfs/cardscript-schema/commit/dbb0c6e))
+
 # [1.15.0](https://github.com/wmfs/cardscript-schema/compare/v1.14.0...v1.15.0) (2019-07-12)
 
 
