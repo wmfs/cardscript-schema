@@ -746,6 +746,19 @@
         },
         "spacing": {
           "$ref": "#/definitions/SpacingStyle"
+        },
+        "actionStyle": {
+          "type": "string",
+          "description": "How to display the action set.",
+          "enum": [
+            "list",
+            "dropdown"
+          ],
+          "default": "list"
+        },
+        "label": {
+          "type": "string",
+          "description": "Text displayed as label if ActionSet is in dropdown style."
         }
       },
       "required": ["type", "actions"]
