@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/wmfs/cardscript-schema/compare/v1.16.0...v1.17.0) (2019-07-16)
+
+
+### ✨ Features
+
+* allow dropdown style on ActionSet ([35a6abf](https://github.com/wmfs/cardscript-schema/commit/35a6abf))
+
 # [1.16.0](https://github.com/wmfs/cardscript-schema/compare/v1.15.0...v1.16.0) (2019-07-15)
 
 
