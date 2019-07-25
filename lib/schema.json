@@ -1612,14 +1612,20 @@
             "Input.ApiLookup"
           ]
         },
-        "selectionType": {
+        "showPagination": {
+          "type": "boolean",
+          "description": "Whether or not to show pagination for the results",
+          "default": false
+        },
+        "resultsPerPage": {
+          "type": "integer",
+          "description": "Amount of results to show per page",
+          "default": 15
+        },
+        "buttonText": {
           "type": "string",
-          "description": "Whether the use can select a value.",
-          "enum": [
-            "none",
-            "single",
-            "multi"
-          ]
+          "description": "Text to display for the button to launch the api lookup",
+          "default": "Go"
         },
         "endpoint": {
           "type": "object",
@@ -1629,15 +1635,41 @@
               "type": "string",
               "description": "Name of the endpoint"
             }
-          }
+          },
+          "required": [
+            "name"
+          ]
+        },
+        "ctxPaths": {
+          "type": "object",
+          "description": "Specify paths to data",
+          "properties": {
+            "results": {
+              "type": "string",
+              "description": "Path to the results of the api lookup"
+            },
+            "totalHits": {
+              "type": "string",
+              "description": "Path to the value of the total hits from the results of the api lookup"
+            }
+          },
+          "required": [
+            "results",
+            "totalHits"
+          ]
         },
         "parametersCard": {
+          "$ref": "#/definitions/AdaptiveCard"
+        },
+        "resultsCard": {
           "$ref": "#/definitions/AdaptiveCard"
         }
       },
       "required": [
         "type",
-        "id"
+        "id",
+        "endpoint",
+        "ctxPaths"
       ]
     },
     "Input.Gender": {
@@ -2005,6 +2037,15 @@
         "arrayPath": {
           "type": "string",
           "description": "Points to the array of data to be displayed."
+        },
+        "selectionType": {
+          "type": "string",
+          "description": "Whether the use can select a value.",
+          "enum": [
+            "none",
+            "single",
+            "multi"
+          ]
         }
       },
       "required": [
