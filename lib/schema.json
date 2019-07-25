@@ -2046,6 +2046,48 @@
             "single",
             "multi"
           ]
+        },
+        "rowKey": {
+          "type": "string",
+          "description": "Points to the object key that uniquely identifies the record"
+        },
+        "templates": {
+          "type": "object",
+          "description": "Templates to render when displaying the list items",
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "Template to render for the label of the list item"
+            },
+            "sublabel": {
+              "type": "string",
+              "description": "Template to render for the sublabel of the list item"
+            },
+            "stamp": {
+              "type": "string",
+              "description": "Template to render for the stamp of the list item"
+            }
+          }
+        },
+        "showLaunches": {
+          "type": "boolean",
+          "description": "Whether to show launches menu for list items",
+          "default": false
+        },
+        "showTotal": {
+          "type": "boolean",
+          "description": "Whether to show the value of the total amount of items in the list",
+          "default": false
+        },
+        "notFoundText": {
+          "type": "string",
+          "description": "Text to display if nothing to display in the list",
+          "default": "0 results found"
+        },
+        "clickToLaunch": {
+          "type": "boolean",
+          "description": "Whether to make the item label launchable",
+          "default": false
         }
       },
       "required": [
