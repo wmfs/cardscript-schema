@@ -1,3 +1,15 @@
+# [1.18.0](https://github.com/wmfs/cardscript-schema/compare/v1.17.0...v1.18.0) (2019-11-14)
+
+
+### ✨ Features
+
+* add schema for Tree ([](https://github.com/wmfs/cardscript-schema/commit/5143207))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dev dependancies ([](https://github.com/wmfs/cardscript-schema/commit/3f0f3ec))
+
 # [1.17.0](https://github.com/wmfs/cardscript-schema/compare/v1.16.0...v1.17.0) (2019-07-16)
 
 
