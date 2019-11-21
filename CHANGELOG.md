@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/wmfs/cardscript-schema/compare/v1.18.0...v1.18.1) (2019-11-21)
+
+
+### 🐛 Bug Fixes
+
+* TextBlock wrap property default is true ([](https://github.com/wmfs/cardscript-schema/commit/42431b8))
+
 # [1.18.0](https://github.com/wmfs/cardscript-schema/compare/v1.17.0...v1.18.0) (2019-11-14)
 
 
