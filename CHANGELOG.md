@@ -1,3 +1,11 @@
+# [1.19.0](https://github.com/wmfs/cardscript-schema/compare/v1.18.1...v1.19.0) (2019-12-31)
+
+
+### 🛠 Builds
+
+* **deps:** update lodash requirement from 4.17.14 to 4.17.15 ([a29cf59](https://github.com/wmfs/cardscript-schema/commit/a29cf59d86cf1500906489dc0b999ba2d55b831f))
+* **deps-dev:** bump packages ([c2ab626](https://github.com/wmfs/cardscript-schema/commit/c2ab6268351026d98231f2b21e87e463d1612e4f))
+
 ## [1.18.1](https://github.com/wmfs/cardscript-schema/compare/v1.18.0...v1.18.1) (2019-11-21)
 
 
