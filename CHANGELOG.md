@@ -1,3 +1,11 @@
+# [1.20.0](https://github.com/wmfs/cardscript-schema/compare/v1.19.0...v1.20.0) (2020-01-07)
+
+
+### 🛠 Builds
+
+* **deps:** bump dottie from 2.0.1 to 2.0.2 ([879b6ee](https://github.com/wmfs/cardscript-schema/commit/879b6ee270292c568eedf0cac5bab41fd8e25594))
+* **deps-dev:** bump mocha from 6.2.2 to 7.0.0 ([915f927](https://github.com/wmfs/cardscript-schema/commit/915f927c49964bfe000862f2ae88aaf98d9beada))
+
 # [1.19.0](https://github.com/wmfs/cardscript-schema/compare/v1.18.1...v1.19.0) (2019-12-31)
 
 
