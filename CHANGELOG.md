@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/wmfs/cardscript-schema/compare/v1.20.0...v1.21.0) (2020-01-08)
+
+
+### 🛠 Builds
+
+* **deps:** bump jsonschema from 1.2.4 to 1.2.5 ([5a05b97](https://github.com/wmfs/cardscript-schema/commit/5a05b97184cafda17919099e5d89f92036bb50e6))
+
 # [1.20.0](https://github.com/wmfs/cardscript-schema/compare/v1.19.0...v1.20.0) (2020-01-07)
 
 
