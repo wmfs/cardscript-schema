@@ -6,7 +6,7 @@ const schema = require('./../lib').schema
 const chai = require('chai')
 const expect = chai.expect
 const requiredElements = Object.keys(schema.definitions)
-let toSkip = ['Action', 'Actions', 'CardElement', 'CardElements', 'ChoiceInputStyle', 'HorizontalAlignment',
+const toSkip = ['Action', 'Actions', 'CardElement', 'CardElements', 'ChoiceInputStyle', 'HorizontalAlignment',
   'ImageSize', 'ImageStyle', 'SeparatorStyle', 'SpacingStyle', 'TextInputStyle']
 toSkip.forEach(element => {
   requiredElements.splice(requiredElements.indexOf(element), 1)
