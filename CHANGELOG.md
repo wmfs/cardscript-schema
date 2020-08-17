@@ -1,3 +1,19 @@
+# [1.24.0](https://github.com/wmfs/cardscript-schema/compare/v1.23.0...v1.24.0) (2020-08-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump lodash from 4.17.19 to 4.17.20 ([6496310](https://github.com/wmfs/cardscript-schema/commit/6496310b19eadc554c7925aa7b7d87cb50662320))
+* **deps-dev:** bump codecov from 3.7.0 to 3.7.1 ([c7ef14d](https://github.com/wmfs/cardscript-schema/commit/c7ef14d45ef861b4ec2be6584604732881afa53e))
+* **deps-dev:** bump codecov from 3.7.1 to 3.7.2 ([292b3de](https://github.com/wmfs/cardscript-schema/commit/292b3de0e9d87806b3e84c99a4d212e7e91ebeef))
+* **deps-dev:** bump mocha from 8.0.1 to 8.1.0 ([a198fcb](https://github.com/wmfs/cardscript-schema/commit/a198fcb2abbe7310064d439727123c10041cab32))
+* **deps-dev:** bump mocha from 8.1.0 to 8.1.1 ([5bbeeb6](https://github.com/wmfs/cardscript-schema/commit/5bbeeb6e212a1121a98ae52c60f699728098fe7a))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate lint job [ch1009] ([a686397](https://github.com/wmfs/cardscript-schema/commit/a686397f76b0d65449ecde13d5b35525083c40d5))
+
 # [1.23.0](https://github.com/wmfs/cardscript-schema/compare/v1.22.0...v1.23.0) (2020-07-13)
 
 
