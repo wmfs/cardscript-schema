@@ -1,3 +1,15 @@
+# [1.25.0](https://github.com/wmfs/cardscript-schema/compare/v1.24.0...v1.25.0) (2020-09-28)
+
+
+### 🛠 Builds
+
+* **deps:** bump jsonschema from 1.2.6 to 1.2.7 ([5e23536](https://github.com/wmfs/cardscript-schema/commit/5e235366ed2a7356f4103f01b3032d5c6b6c7f66))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.0 to 3.2.1 ([a5108f0](https://github.com/wmfs/cardscript-schema/commit/a5108f0ef4c9254b96aafcfb622f6e8781ef3ec5))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.1 to 3.3.0 ([8ac9d19](https://github.com/wmfs/cardscript-schema/commit/8ac9d1943ccc8ce0d82059c2060abe0604ee4103))
+* **deps-dev:** bump mocha from 8.1.1 to 8.1.2 ([bbd6c6f](https://github.com/wmfs/cardscript-schema/commit/bbd6c6febec8a3fae2a61ebf1cf60cb5c792aafe))
+* **deps-dev:** bump mocha from 8.1.2 to 8.1.3 ([825e43f](https://github.com/wmfs/cardscript-schema/commit/825e43fbd0c743116f9912591dce6023a3e679e8))
+* **deps-dev:** bump semantic-release from 17.1.1 to 17.1.2 ([6b734ef](https://github.com/wmfs/cardscript-schema/commit/6b734ef36e3ee342173dca98b139dc5f58c13d46))
+
 # [1.24.0](https://github.com/wmfs/cardscript-schema/compare/v1.23.0...v1.24.0) (2020-08-17)
 
 
