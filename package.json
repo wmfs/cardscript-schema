@@ -10,7 +10,7 @@
   "main": "./lib/index.js",
   "dependencies": {
     "dottie": "2.0.2",
-    "jsonschema": "1.2.7",
+    "jsonschema": "1.4.0",
     "lodash": "4.17.20"
   },
   "devDependencies": {
