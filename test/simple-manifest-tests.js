@@ -15,7 +15,7 @@ toSkip.forEach(element => {
 describe('Run some manifestation tests', () => {
   it('should check all required elements are present', () => {
     const result = manifestor()
-    Object.values(result.elements).map(element => {
+    Object.values(result.elements).forEach(element => {
       expect(requiredElements.includes(element.type)).to.equal(true)
       requiredElements.splice(requiredElements.indexOf(element.type), 1)
     })
