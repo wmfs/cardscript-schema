@@ -1,3 +1,26 @@
+# [1.27.0](https://github.com/wmfs/cardscript-schema/compare/v1.26.0...v1.27.0) (2021-02-24)
+
+
+### 🛠 Builds
+
+* **deps:** bump lodash from 4.17.20 to 4.17.21 ([18f4a96](https://github.com/wmfs/cardscript-schema/commit/18f4a96ade4d8d232461d6eed6785f37d508ed84))
+* **deps-dev:** bump chai from 4.2.0 to 4.3.0 ([3d884e4](https://github.com/wmfs/cardscript-schema/commit/3d884e490053cdfa78d31aec134fd418201cae89))
+* **deps-dev:** bump mocha from 8.2.1 to 8.3.0 ([0c36f83](https://github.com/wmfs/cardscript-schema/commit/0c36f838c778533877e8d37c31207869a961b6d1))
+* **deps-dev:** bump semantic-release from 17.3.1 to 17.3.2 ([6ee5f70](https://github.com/wmfs/cardscript-schema/commit/6ee5f7026de3bfddc73ea4bd91120a981f3172d1))
+* **deps-dev:** bump semantic-release from 17.3.2 to 17.3.3 ([878ca29](https://github.com/wmfs/cardscript-schema/commit/878ca29316a5cf3c340cd14d4d90c88093e22043))
+* **deps-dev:** bump semantic-release from 17.3.3 to 17.3.4 ([50500da](https://github.com/wmfs/cardscript-schema/commit/50500daf009000077e1bc6d61cc47f2d113e5f83))
+* **deps-dev:** bump semantic-release from 17.3.4 to 17.3.5 ([755074d](https://github.com/wmfs/cardscript-schema/commit/755074deb4d036e2b5983f9682ee4b535b4f662b))
+* **deps-dev:** bump semantic-release from 17.3.5 to 17.3.6 ([58ad124](https://github.com/wmfs/cardscript-schema/commit/58ad12461398428e2f7885062ccfe15bf52554e2))
+* **deps-dev:** bump semantic-release from 17.3.6 to 17.3.7 ([ade6d1a](https://github.com/wmfs/cardscript-schema/commit/ade6d1abdb1ee07df10e8ca0ee0b5c9cfed70cf4))
+* **deps-dev:** bump semantic-release from 17.3.7 to 17.3.8 ([071120a](https://github.com/wmfs/cardscript-schema/commit/071120a62373294ea522f6e836d84d74061f5053))
+* **deps-dev:** bump semantic-release from 17.3.8 to 17.3.9 ([604bf25](https://github.com/wmfs/cardscript-schema/commit/604bf2589f6f111a03322d27203a95210a11cad5))
+* **deps-dev:** bump standard from 15.0.1 to 16.0.3 ([58955cc](https://github.com/wmfs/cardscript-schema/commit/58955cc02a7ef6d68446511b027809e2e7cbf0f2))
+
+
+### 📦 Code Refactoring
+
+* standard linting ([a14e658](https://github.com/wmfs/cardscript-schema/commit/a14e658840a1d79369bf42e5b832afd3a5dd2e7b))
+
 # [1.26.0](https://github.com/wmfs/cardscript-schema/compare/v1.25.0...v1.26.0) (2021-01-06)
 
 
