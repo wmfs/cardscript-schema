@@ -1,3 +1,26 @@
+# [1.28.0](https://github.com/wmfs/cardscript-schema/compare/v1.27.0...v1.28.0) (2021-05-13)
+
+
+### ✨ Features
+
+* order schema definitions and remove TreeItem recursion for now ([e04dac6](https://github.com/wmfs/cardscript-schema/commit/e04dac654390cfeb5069308500f6f1b33ec1da4a))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump chai from 4.3.0 to 4.3.1 ([2319ae1](https://github.com/wmfs/cardscript-schema/commit/2319ae1bbe7cc806558ce4262a97d9c541361489))
+* **deps-dev:** bump chai from 4.3.1 to 4.3.2 ([002a296](https://github.com/wmfs/cardscript-schema/commit/002a29675ce679d1380f116f11849c7835c6290a))
+* **deps-dev:** bump chai from 4.3.2 to 4.3.3 ([ffa7334](https://github.com/wmfs/cardscript-schema/commit/ffa7334b49821f3e28ba897e1f81e51bd23288ea))
+* **deps-dev:** bump chai from 4.3.3 to 4.3.4 ([059e804](https://github.com/wmfs/cardscript-schema/commit/059e804c6167e401897a9e89073ab44983bada4e))
+* **deps-dev:** bump codecov from 3.8.1 to 3.8.2 ([372c9a7](https://github.com/wmfs/cardscript-schema/commit/372c9a706e6ab1c273606cf160acf6d5a047a8dc))
+* **deps-dev:** bump mocha from 8.3.0 to 8.3.1 ([5713fac](https://github.com/wmfs/cardscript-schema/commit/5713face5adcd8ff3ff8da902b2859630a2ff54d))
+* **deps-dev:** bump mocha from 8.3.1 to 8.3.2 ([72dcc99](https://github.com/wmfs/cardscript-schema/commit/72dcc99c6957005d1cdd3ad2b8158e6e69a5a21e))
+* **deps-dev:** bump mocha from 8.3.2 to 8.4.0 ([e5e82bc](https://github.com/wmfs/cardscript-schema/commit/e5e82bcebbe0749e18eb89fd7f2253bcf574c463))
+* **deps-dev:** bump semantic-release from 17.3.9 to 17.4.0 ([e8c533a](https://github.com/wmfs/cardscript-schema/commit/e8c533ac9d5516a57b108537d89b345730215b6a))
+* **deps-dev:** bump semantic-release from 17.4.0 to 17.4.1 ([7e6e056](https://github.com/wmfs/cardscript-schema/commit/7e6e056f57b87382a2eaa7e00658292c5d9a4db0))
+* **deps-dev:** bump semantic-release from 17.4.1 to 17.4.2 ([7030f83](https://github.com/wmfs/cardscript-schema/commit/7030f83fd2b8e29b66e6568f9f9c7095e35eb5b3))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([f9ff9ef](https://github.com/wmfs/cardscript-schema/commit/f9ff9ef30caf37bc23e82f77fa962011d3fefe63))
+
 # [1.27.0](https://github.com/wmfs/cardscript-schema/compare/v1.26.0...v1.27.0) (2021-02-24)
 
 
