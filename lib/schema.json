@@ -132,24 +132,6 @@
     "version"
   ],
   "definitions": {
-    "CardscriptField": {
-      "additionalProperties": true,
-      "description": "Adds various properties to extend base Input types.",
-      "properties": {
-        "icon": {
-          "type": "string",
-          "description": "Name of an icon to display alongside this element."
-        },
-        "title": {
-          "type": "string",
-          "description": "Strong text to clearly identify the intent of the element.",
-          "examples": [
-            "Your date of birth"
-          ]
-        }
-      },
-      "type": "object"
-    },
     "Action": {
       "anyOf": [
         {
@@ -184,101 +166,29 @@
         }
       ]
     },
-    "Action.RefreshTasks": {
+    "Action.Cancel": {
+      "type": "object",
       "additionalProperties": true,
-      "description": "When invoked this will refresh the users tasks.",
+      "description": "Allows to cancel out of a form.",
       "properties": {
         "type": {
           "type": "string",
-          "description": "Must be `\"Action.RefreshTasks\"`"
-        }
-      },
-      "required": [
-        "type"
-      ],
-      "type": "object"
-    },
-    "Action.RefreshWatching": {
-      "additionalProperties": true,
-      "description": "When invoked this will refresh the users watched cards.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Action.RefreshWatching\"`"
-        }
-      },
-      "required": [
-        "type"
-      ],
-      "type": "object"
-    },
-    "Action.RefreshRemit": {
-      "additionalProperties": true,
-      "description": "When invoked this will refresh the app's remit.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Action.RefreshRemit\"`"
-        }
-      },
-      "required": [
-        "type"
-      ],
-      "type": "object"
-    },
-    "Action.PushCard": {
-      "additionalProperties": true,
-      "description": "When invoked this will push the new card on the routing history.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Action.PushCard\"`."
+          "description": "Must be `\"Action.Cancel\"`."
         },
         "title": {
           "type": "string",
           "description": "Label for button or link that represents this action."
         },
-        "stateMachineName": {
+        "iconUrl": {
           "type": "string",
-          "description": "The state machine to launch."
-        },
-        "input": {
-          "type": "object",
-          "description": "The input to launch with."
+          "format": "uri",
+          "description": "Optional icon to be shown on the action in conjunction with the title",
+          "version": "1.1"
         }
       },
       "required": [
-        "type",
-        "stateMachineName"
-      ],
-      "type": "object"
-    },
-    "Action.ReplaceCard": {
-      "additionalProperties": true,
-      "description": "When invoked this will replace the current entry in the history with the new route.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Action.ReplaceCard\"`."
-        },
-        "title": {
-          "type": "string",
-          "description": "Label for button or link that represents this action."
-        },
-        "stateMachineName": {
-          "type": "string",
-          "description": "The state machine to launch."
-        },
-        "input": {
-          "type": "object",
-          "description": "The input to launch with."
-        }
-      },
-      "required": [
-        "type",
-        "stateMachineName"
-      ],
-      "type": "object"
+        "type"
+      ]
     },
     "Action.OpenUrl": {
       "additionalProperties": true,
@@ -310,6 +220,126 @@
       ],
       "type": "object"
     },
+    "Action.PushCard": {
+      "additionalProperties": true,
+      "description": "When invoked this will push the new card on the routing history.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.PushCard\"`."
+        },
+        "title": {
+          "type": "string",
+          "description": "Label for button or link that represents this action."
+        },
+        "stateMachineName": {
+          "type": "string",
+          "description": "The state machine to launch."
+        },
+        "input": {
+          "type": "object",
+          "description": "The input to launch with."
+        }
+      },
+      "required": [
+        "type",
+        "stateMachineName"
+      ],
+      "type": "object"
+    },
+    "Action.RefreshRemit": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the app's remit.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshRemit\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "Action.RefreshTasks": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the users tasks.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshTasks\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "Action.RefreshWatching": {
+      "additionalProperties": true,
+      "description": "When invoked this will refresh the users watched cards.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.RefreshWatching\"`"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "Action.ReplaceCard": {
+      "additionalProperties": true,
+      "description": "When invoked this will replace the current entry in the history with the new route.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.ReplaceCard\"`."
+        },
+        "title": {
+          "type": "string",
+          "description": "Label for button or link that represents this action."
+        },
+        "stateMachineName": {
+          "type": "string",
+          "description": "The state machine to launch."
+        },
+        "input": {
+          "type": "object",
+          "description": "The input to launch with."
+        }
+      },
+      "required": [
+        "type",
+        "stateMachineName"
+      ],
+      "type": "object"
+    },
+    "Action.Save": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "Allows to save a form to continue later.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Action.Save\"`."
+        },
+        "title": {
+          "type": "string",
+          "description": "Label for button or link that represents this action."
+        },
+        "iconUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "Optional icon to be shown on the action in conjunction with the title",
+          "version": "1.1"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
     "Action.ShowCard": {
       "type": "object",
       "additionalProperties": true,
@@ -336,54 +366,6 @@
       "required": [
         "type",
         "card"
-      ]
-    },
-    "Action.Cancel": {
-      "type": "object",
-      "additionalProperties": true,
-      "description": "Allows to cancel out of a form.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Action.Cancel\"`."
-        },
-        "title": {
-          "type": "string",
-          "description": "Label for button or link that represents this action."
-        },
-        "iconUrl": {
-          "type": "string",
-          "format": "uri",
-          "description": "Optional icon to be shown on the action in conjunction with the title",
-          "version": "1.1"
-        }
-      },
-      "required": [
-        "type"
-      ]
-    },
-    "Action.Save": {
-      "type": "object",
-      "additionalProperties": true,
-      "description": "Allows to save a form to continue later.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Action.Save\"`."
-        },
-        "title": {
-          "type": "string",
-          "description": "Label for button or link that represents this action."
-        },
-        "iconUrl": {
-          "type": "string",
-          "format": "uri",
-          "description": "Optional icon to be shown on the action in conjunction with the title",
-          "version": "1.1"
-        }
-      },
-      "required": [
-        "type"
       ]
     },
     "Action.Submit": {
@@ -415,6 +397,49 @@
       },
       "required": [
         "type"
+      ]
+    },
+    "ActionSet": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "ActionSet allows actions to be displayed within a card.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"ActionSet\"`.",
+          "enum": [
+            "ActionSet"
+          ]
+        },
+        "actions": {
+          "description": "The Actions to show in the card's action bar.",
+          "$ref": "#/definitions/Actions"
+        },
+        "spacing": {
+          "$ref": "#/definitions/SpacingStyle"
+        },
+        "actionStyle": {
+          "type": "string",
+          "description": "How to display the action set.",
+          "enum": [
+            "list",
+            "dropdown"
+          ],
+          "default": "list"
+        },
+        "label": {
+          "type": "string",
+          "description": "Text displayed as label if ActionSet is in dropdown style."
+        }
+      },
+      "required": [
+        "type",
+        "actions"
       ]
     },
     "Actions": {
@@ -459,6 +484,49 @@
       },
       "required": [
         "type"
+      ]
+    },
+    "AddressBlock": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays an address.",
+      "version": "1.1",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"AddressBlock\"`.",
+          "enum": [
+            "AddressBlock"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the AddressBlock.",
+          "default": "Address"
+        },
+        "dataPath": {
+          "type": "string",
+          "description": "Points to the holding the address."
+        },
+        "multiline": {
+          "type": "boolean",
+          "default": true,
+          "description": "Wether the address in multiple lines."
+        },
+        "lineDelimited": {
+          "type": "string",
+          "default": ",",
+          "description": "The string of character(s) which the address is delimited by."
+        }
+      },
+      "required": [
+        "type",
+        "dataPath"
       ]
     },
     "CardElement": {
@@ -608,33 +676,87 @@
         }
       ]
     },
-    "Input.Choice": {
-      "type": "object",
-      "description": "Describes a choice for use in a ChoiceSet.",
+    "CardList": {
       "additionalProperties": true,
+      "type": "object",
+      "description": "A container which opens a modal when clicked on to show a card.",
       "properties": {
+        "id": {
+          "type": "string",
+          "description": "A unique identifier associated with the element."
+        },
         "type": {
           "type": "string",
+          "description": "Must be `\"CardList\"`.",
           "enum": [
-            "Input.Choice"
+            "CardList"
           ]
         },
-        "title": {
+        "addButtonLabel": {
           "type": "string",
-          "description": "Text to display."
+          "description": "Text to be displayed as label of button."
         },
-        "icon": {
-          "type": "string",
-          "description": "Name of an icon to display for the choice."
+        "card": {
+          "$ref": "#/definitions/AdaptiveCard"
         },
-        "value": {
+        "instanceTitleTemplate": {
           "type": "string",
-          "description": "The raw value for the choice. **NOTE:** do not use a `,` in the value, since a `ChoiceSet` with `isMultiSelect` set to `true` returns a comma-delimited string of choice values."
+          "description": "A handlebars-like template for conjuring a title per instance."
+        },
+        "instanceSubtitleTemplate": {
+          "type": "string",
+          "description": "A handlebars-like template for conjuring a subtitle per instance."
         }
       },
       "required": [
+        "id",
+        "type",
         "title",
-        "value"
+        "card"
+      ]
+    },
+    "CardscriptField": {
+      "additionalProperties": true,
+      "description": "Adds various properties to extend base Input types.",
+      "properties": {
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to display alongside this element."
+        },
+        "title": {
+          "type": "string",
+          "description": "Strong text to clearly identify the intent of the element.",
+          "examples": [
+            "Your date of birth"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "Chip": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "A chip to display some text.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Chip\"`.",
+          "enum": [
+            "Chip"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "description": "Text to be displayed in chip."
+        },
+        "color": {
+          "type": "string",
+          "description": "Color of the chip"
+        }
+      },
+      "required": [
+        "type",
+        "text"
       ]
     },
     "ChoiceInputStyle": {
@@ -646,35 +768,30 @@
         "expanded"
       ]
     },
-    "Tab": {
+    "Collapsible": {
       "additionalProperties": true,
       "type": "object",
-      "description": "Defines a container that is part of a TabSet.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
+      "description": "A container which expands when clicked on to show a card.",
       "properties": {
         "type": {
           "type": "string",
-          "description": "Must be `\"Tab\"`.",
+          "description": "Must be `\"Collapsible\"`.",
           "enum": [
-            "Tab"
+            "Collapsible"
           ]
-        },
-        "items": {
-          "description": "The card elements to include in the `Tab`.",
-          "$ref": "#/definitions/CardElements"
         },
         "title": {
           "type": "string",
-          "description": "The title of the `Tab`."
+          "description": "Text to be displayed as label."
+        },
+        "card": {
+          "$ref": "#/definitions/AdaptiveCard"
         }
       },
       "required": [
-        "items",
-        "title"
+        "type",
+        "title",
+        "card"
       ]
     },
     "Column": {
@@ -728,82 +845,6 @@
       },
       "required": [
         "items"
-      ]
-    },
-    "ActionSet": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "ActionSet allows actions to be displayed within a card.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"ActionSet\"`.",
-          "enum": [
-            "ActionSet"
-          ]
-        },
-        "actions": {
-          "description": "The Actions to show in the card's action bar.",
-          "$ref": "#/definitions/Actions"
-        },
-        "spacing": {
-          "$ref": "#/definitions/SpacingStyle"
-        },
-        "actionStyle": {
-          "type": "string",
-          "description": "How to display the action set.",
-          "enum": [
-            "list",
-            "dropdown"
-          ],
-          "default": "list"
-        },
-        "label": {
-          "type": "string",
-          "description": "Text displayed as label if ActionSet is in dropdown style."
-        }
-      },
-      "required": [
-        "type",
-        "actions"
-      ]
-    },
-    "TabSet": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "TabSet allows to display content through various tabs.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"TabSet\"`.",
-          "enum": [
-            "TabSet"
-          ]
-        },
-        "id": {
-          "type": "string",
-          "description": "A unique identifier associated with the element."
-        },
-        "tabs": {
-          "type": "array",
-          "description": "The array of `Tabs` to divide content.",
-          "items": {
-            "$ref": "#/definitions/Tab"
-          }
-        }
-      },
-      "required": [
-        "id"
       ]
     },
     "ColumnSet": {
@@ -973,89 +1014,6 @@
         "facts"
       ]
     },
-    "HorizontalAlignment": {
-      "type": "string",
-      "description": "Controls how elements are horizontally positioned within their container.",
-      "default": "left",
-      "enum": [
-        "left",
-        "center",
-        "right"
-      ]
-    },
-    "MediaSource": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Defines a source for a Media element",
-      "version": "1.1",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Whether the media is audio or video.",
-          "enum": [
-            "video",
-            "audio"
-          ]
-        },
-        "mimeType": {
-          "type": "string",
-          "description": "Mime type of associated media (e.g. `\"video/mp4\"`)."
-        },
-        "url": {
-          "type": "string",
-          "format": "uri",
-          "description": "URL to media."
-        }
-      },
-      "required": [
-        "type",
-        "mimeType",
-        "url"
-      ]
-    },
-    "AddressBlock": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Displays an address.",
-      "version": "1.1",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"AddressBlock\"`.",
-          "enum": [
-            "AddressBlock"
-          ]
-        },
-        "title": {
-          "type": "string",
-          "description": "Title of the AddressBlock.",
-          "default": "Address"
-        },
-        "dataPath": {
-          "type": "string",
-          "description": "Points to the holding the address."
-        },
-        "multiline": {
-          "type": "boolean",
-          "default": true,
-          "description": "Wether the address in multiple lines."
-        },
-        "lineDelimited": {
-          "type": "string",
-          "default": ",",
-          "description": "The string of character(s) which the address is delimited by."
-        }
-      },
-      "required": [
-        "type",
-        "dataPath"
-      ]
-    },
     "Graph": {
       "additionalProperties": true,
       "type": "object",
@@ -1084,120 +1042,14 @@
         "type"
       ]
     },
-    "Map": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Displays a map.",
-      "version": "1.1",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Map\"`.",
-          "enum": [
-            "Map"
-          ]
-        }
-      },
-      "required": [
-        "type"
-      ]
-    },
-    "PhaseBanner": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Displays a banner highlighting a phase.",
-      "version": "1.1",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"PhaseBanner\"`.",
-          "enum": [
-            "PhaseBanner"
-          ]
-        },
-        "phase": {
-          "type": "string",
-          "description": "The phase which the service is in.",
-          "enum": [
-            "alpha",
-            "beta"
-          ]
-        }
-      },
-      "required": [
-        "type"
-      ]
-    },
-    "Separator": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Displays a horizontal line.",
-      "version": "1.1",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Separator\"`.",
-          "enum": [
-            "Separator"
-          ]
-        }
-      },
-      "required": [
-        "type"
-      ]
-    },
-    "Media": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Displays a media player for audio or video content.",
-      "version": "1.1",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Media\"`.",
-          "enum": [
-            "Media"
-          ]
-        },
-        "sources": {
-          "type": "array",
-          "description": "Array of media sources to attempt to play.",
-          "items": {
-            "$ref": "#/definitions/MediaSource"
-          }
-        },
-        "poster": {
-          "type": "string",
-          "format": "uri",
-          "description": "URL of an image to display before playing."
-        },
-        "altText": {
-          "type": "string",
-          "description": "Alternate text describing the audio or video."
-        }
-      },
-      "required": [
-        "type"
+    "HorizontalAlignment": {
+      "type": "string",
+      "description": "Controls how elements are horizontally positioned within their container.",
+      "default": "left",
+      "enum": [
+        "left",
+        "center",
+        "right"
       ]
     },
     "Image": {
@@ -1304,291 +1156,6 @@
       "enum": [
         "default",
         "person"
-      ]
-    },
-    "Input.ChoiceSet": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Allows a user to input a Choice.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        },
-        {
-          "$ref": "#/definitions/CardscriptField"
-        }
-      ],
-      "properties": {
-        "choices": {
-          "type": "array",
-          "description": "`Choice` options.",
-          "items": {
-            "$ref": "#/definitions/Input.Choice"
-          }
-        },
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "isMultiSelect": {
-          "type": "boolean",
-          "description": "Allow multiple choices to be selected.",
-          "default": false
-        },
-        "style": {
-          "$ref": "#/definitions/ChoiceInputStyle"
-        },
-        "type": {
-          "description": "Must be `\"Input.ChoiceInput\"`.",
-          "enum": [
-            "Input.ChoiceSet"
-          ],
-          "type": "string"
-        },
-        "value": {
-          "type": "string",
-          "description": "The initial choice (or set of choices) that should be selected. For multi-select, specify a comma-separated string of values."
-        }
-      },
-      "required": [
-        "type",
-        "id",
-        "choices"
-      ]
-    },
-    "Input.Date": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Lets a user choose a date.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "max": {
-          "type": "string",
-          "description": "Hint of maximum value expressed in ISO-8601 format (may be ignored by some clients)."
-        },
-        "min": {
-          "type": "string",
-          "description": "Hint of minimum value expressed in ISO-8601 format (may be ignored by some clients)."
-        },
-        "placeholder": {
-          "type": "string",
-          "description": "Description of the input desired. Displayed when no selection has been made."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.Date\"`.",
-          "enum": [
-            "Input.Date"
-          ]
-        },
-        "value": {
-          "type": "string",
-          "description": "The initial value for this field expressed in ISO-8601 format."
-        },
-        "clearable": {
-          "type": "boolean",
-          "description": "Whether the user can clear the data."
-        }
-      },
-      "required": [
-        "type",
-        "id"
-      ]
-    },
-    "Input.Number": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Allows a user to enter a number.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "max": {
-          "type": "number",
-          "description": "Hint of maximum value (may be ignored by some clients)."
-        },
-        "min": {
-          "type": "number",
-          "description": "Hint of minimum value (may be ignored by some clients)."
-        },
-        "placeholder": {
-          "type": "string",
-          "description": "Description of the input desired. Displayed when no selection has been made."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.Number\"`.",
-          "enum": [
-            "Input.Number"
-          ]
-        },
-        "value": {
-          "type": "number",
-          "description": "Initial value for this field."
-        }
-      },
-      "required": [
-        "type",
-        "id"
-      ]
-    },
-    "Input.Slider": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Lets a user enter value with a slider.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.Slider\"`.",
-          "enum": [
-            "Input.Slider"
-          ]
-        },
-        "min": {
-          "type": "number",
-          "description": "Minimum value of the model.",
-          "default": 1
-        },
-        "max": {
-          "type": "number",
-          "description": "Maximum value of the model.",
-          "default": 5
-        },
-        "step": {
-          "type": "number",
-          "description": "Step amount between values."
-        },
-        "value": {
-          "type": "string",
-          "description": "The initial value for this field."
-        }
-      },
-      "required": [
-        "id",
-        "type"
-      ]
-    },
-    "Input.FileUpload": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Lets a user upload a file.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.FileUpload\"`.",
-          "enum": [
-            "Input.FileUpload"
-          ]
-        }
-      },
-      "required": [
-        "type",
-        "id"
-      ]
-    },
-    "Input.Email": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Lets a user enter an email.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        },
-        {
-          "$ref": "#/definitions/CardscriptField"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.Email\"`.",
-          "enum": [
-            "Input.Email"
-          ]
-        },
-        "icon": {
-          "type": "string",
-          "description": "Name of an icon to prefix email input with."
-        }
-      },
-      "required": [
-        "type",
-        "id"
-      ]
-    },
-    "Input.Currency": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Lets a user enter a currency value.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.Currency\"`.",
-          "enum": [
-            "Input.Currency"
-          ]
-        },
-        "placeholder": {
-          "type": "string",
-          "description": "Description of the input desired. Displayed when no text has been input."
-        },
-        "max": {
-          "type": "number",
-          "description": "Hint of maximum value (may be ignored by some clients)."
-        },
-        "min": {
-          "type": "number",
-          "description": "Hint of minimum value (may be ignored by some clients)."
-        }
-      },
-      "required": [
-        "type",
-        "id"
       ]
     },
     "Input.Address": {
@@ -1699,6 +1266,272 @@
         "ctxPaths"
       ]
     },
+    "Input.Choice": {
+      "type": "object",
+      "description": "Describes a choice for use in a ChoiceSet.",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Input.Choice"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Text to display."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to display for the choice."
+        },
+        "value": {
+          "type": "string",
+          "description": "The raw value for the choice. **NOTE:** do not use a `,` in the value, since a `ChoiceSet` with `isMultiSelect` set to `true` returns a comma-delimited string of choice values."
+        }
+      },
+      "required": [
+        "title",
+        "value"
+      ]
+    },
+    "Input.ChoiceSet": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Allows a user to input a Choice.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        },
+        {
+          "$ref": "#/definitions/CardscriptField"
+        }
+      ],
+      "properties": {
+        "choices": {
+          "type": "array",
+          "description": "`Choice` options.",
+          "items": {
+            "$ref": "#/definitions/Input.Choice"
+          }
+        },
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "isMultiSelect": {
+          "type": "boolean",
+          "description": "Allow multiple choices to be selected.",
+          "default": false
+        },
+        "style": {
+          "$ref": "#/definitions/ChoiceInputStyle"
+        },
+        "type": {
+          "description": "Must be `\"Input.ChoiceInput\"`.",
+          "enum": [
+            "Input.ChoiceSet"
+          ],
+          "type": "string"
+        },
+        "value": {
+          "type": "string",
+          "description": "The initial choice (or set of choices) that should be selected. For multi-select, specify a comma-separated string of values."
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "choices"
+      ]
+    },
+    "Input.Currency": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Lets a user enter a currency value.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.Currency\"`.",
+          "enum": [
+            "Input.Currency"
+          ]
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Description of the input desired. Displayed when no text has been input."
+        },
+        "max": {
+          "type": "number",
+          "description": "Hint of maximum value (may be ignored by some clients)."
+        },
+        "min": {
+          "type": "number",
+          "description": "Hint of minimum value (may be ignored by some clients)."
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    },
+    "Input.Date": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Lets a user choose a date.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "max": {
+          "type": "string",
+          "description": "Hint of maximum value expressed in ISO-8601 format (may be ignored by some clients)."
+        },
+        "min": {
+          "type": "string",
+          "description": "Hint of minimum value expressed in ISO-8601 format (may be ignored by some clients)."
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Description of the input desired. Displayed when no selection has been made."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.Date\"`.",
+          "enum": [
+            "Input.Date"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "description": "The initial value for this field expressed in ISO-8601 format."
+        },
+        "clearable": {
+          "type": "boolean",
+          "description": "Whether the user can clear the data."
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    },
+    "Input.DateTime": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Lets a user enter a telephone number.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.DateTime\"`.",
+          "enum": [
+            "Input.DateTime"
+          ]
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Description of the input desired. Displayed when no text has been input."
+        },
+        "clearable": {
+          "type": "boolean",
+          "description": "Whether the user can clear the data."
+        },
+        "withSeconds": {
+          "type": "boolean",
+          "description": "Whether to display and allow the user to enter seconds",
+          "default": false
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    },
+    "Input.Email": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Lets a user enter an email.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        },
+        {
+          "$ref": "#/definitions/CardscriptField"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.Email\"`.",
+          "enum": [
+            "Input.Email"
+          ]
+        },
+        "icon": {
+          "type": "string",
+          "description": "Name of an icon to prefix email input with."
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    },
+    "Input.FileUpload": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Lets a user upload a file.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.FileUpload\"`.",
+          "enum": [
+            "Input.FileUpload"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    },
     "Input.Gender": {
       "additionalProperties": true,
       "type": "object",
@@ -1781,6 +1614,49 @@
         "id"
       ]
     },
+    "Input.Number": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Allows a user to enter a number.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "max": {
+          "type": "number",
+          "description": "Hint of maximum value (may be ignored by some clients)."
+        },
+        "min": {
+          "type": "number",
+          "description": "Hint of minimum value (may be ignored by some clients)."
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Description of the input desired. Displayed when no selection has been made."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.Number\"`.",
+          "enum": [
+            "Input.Number"
+          ]
+        },
+        "value": {
+          "type": "number",
+          "description": "Initial value for this field."
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    },
     "Input.Signature": {
       "additionalProperties": true,
       "type": "object",
@@ -1820,6 +1696,51 @@
         "id"
       ]
     },
+    "Input.Slider": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Lets a user enter value with a slider.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+        },
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Input.Slider\"`.",
+          "enum": [
+            "Input.Slider"
+          ]
+        },
+        "min": {
+          "type": "number",
+          "description": "Minimum value of the model.",
+          "default": 1
+        },
+        "max": {
+          "type": "number",
+          "description": "Maximum value of the model.",
+          "default": 5
+        },
+        "step": {
+          "type": "number",
+          "description": "Step amount between values."
+        },
+        "value": {
+          "type": "string",
+          "description": "The initial value for this field."
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ]
+    },
     "Input.TelephoneNumber": {
       "additionalProperties": true,
       "type": "object",
@@ -1852,46 +1773,6 @@
         "icon": {
           "type": "string",
           "description": "Name of an icon to prefix telephone-number input with."
-        }
-      },
-      "required": [
-        "type",
-        "id"
-      ]
-    },
-    "Input.DateTime": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "Lets a user enter a telephone number.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/CardElement"
-        }
-      ],
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
-        },
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Input.DateTime\"`.",
-          "enum": [
-            "Input.DateTime"
-          ]
-        },
-        "placeholder": {
-          "type": "string",
-          "description": "Description of the input desired. Displayed when no text has been input."
-        },
-        "clearable": {
-          "type": "boolean",
-          "description": "Whether the user can clear the data."
-        },
-        "withSeconds": {
-          "type": "boolean",
-          "description": "Whether to display and allow the user to enter seconds",
-          "default": false
         }
       },
       "required": [
@@ -2041,6 +1922,44 @@
         "title"
       ]
     },
+    "Jumbotron": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "An element typically placed at the top of a card to describe its purpose.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Jumbotron\"`.",
+          "enum": [
+            "Jumbotron"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "description": "Text to be displayed as heading."
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Text to be displayed as subheading."
+        },
+        "wash": {
+          "type": "string",
+          "enum": [
+            "white",
+            "black"
+          ],
+          "description": "Type of wash to have over the background."
+        },
+        "backgroundImage": {
+          "type": "string",
+          "description": "Relative URL to image to be displayed as background."
+        }
+      },
+      "required": [
+        "type",
+        "title"
+      ]
+    },
     "List": {
       "additionalProperties": true,
       "type": "object",
@@ -2128,10 +2047,33 @@
         "arrayPath"
       ]
     },
-    "Tree": {
+    "Map": {
       "additionalProperties": true,
       "type": "object",
-      "description": "Displays some information in a tree format.",
+      "description": "Displays a map.",
+      "version": "1.1",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Map\"`.",
+          "enum": [
+            "Map"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "MarkupTable": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays information in table format.",
       "allOf": [
         {
           "$ref": "#/definitions/CardElement"
@@ -2144,40 +2086,282 @@
         },
         "type": {
           "type": "string",
-          "description": "Must be `\"Tree\"`.",
+          "description": "Must be `\"MarkupTable\"`.",
           "enum": [
-            "Tree"
+            "MarkupTable"
           ]
         },
-        "nodes": {
+        "title": {
+          "type": "string",
+          "description": "Title displayed for the `MarkupTable`."
+        },
+        "arrayPath": {
+          "type": "string",
+          "description": "Points to the array of data to be displayed."
+        },
+        "columns": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/TreeItem"
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "description": "Title displayed for the column."
+              },
+              "value": {
+                "type": "string",
+                "description": "Points to the data to be displayed in the column."
+              }
+            },
+            "required": [
+              "title",
+              "value"
+            ]
           }
+        },
+        "showLaunches": {
+          "type": "boolean",
+          "description": "Whether or not to show a menu of actions.",
+          "default": "false"
+        },
+        "selectionType": {
+          "type": "string",
+          "description": "Whether the use can select a value.",
+          "enum": [
+            "none",
+            "single",
+            "multi"
+          ],
+          "default": "none"
         }
       },
       "required": [
         "id",
+        "type",
+        "arrayPath",
+        "columns"
+      ]
+    },
+    "Media": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays a media player for audio or video content.",
+      "version": "1.1",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Media\"`.",
+          "enum": [
+            "Media"
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "description": "Array of media sources to attempt to play.",
+          "items": {
+            "$ref": "#/definitions/MediaSource"
+          }
+        },
+        "poster": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of an image to display before playing."
+        },
+        "altText": {
+          "type": "string",
+          "description": "Alternate text describing the audio or video."
+        }
+      },
+      "required": [
         "type"
       ]
     },
-    "TreeItem": {
+    "MediaSource": {
+      "additionalProperties": true,
       "type": "object",
-      "description": "Nodes belonging to a tree structure",
+      "description": "Defines a source for a Media element",
+      "version": "1.1",
       "properties": {
-        "label": {
+        "type": {
           "type": "string",
-          "description": "Title displayed for the tree item."
+          "description": "Whether the media is audio or video.",
+          "enum": [
+            "video",
+            "audio"
+          ]
         },
-        "children": {
+        "mimeType": {
+          "type": "string",
+          "description": "Mime type of associated media (e.g. `\"video/mp4\"`)."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to media."
+        }
+      },
+      "required": [
+        "type",
+        "mimeType",
+        "url"
+      ]
+    },
+    "PhaseBanner": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays a banner highlighting a phase.",
+      "version": "1.1",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"PhaseBanner\"`.",
+          "enum": [
+            "PhaseBanner"
+          ]
+        },
+        "phase": {
+          "type": "string",
+          "description": "The phase which the service is in.",
+          "enum": [
+            "alpha",
+            "beta"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "Separator": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Displays a horizontal line.",
+      "version": "1.1",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Separator\"`.",
+          "enum": [
+            "Separator"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "SeparatorStyle": {
+      "type": "object",
+      "description": "Indicates whether there should be a visible separator (i.e. a line) between the element and its predecessor. If not specified, no separator is displayed. A separator will only be displayed if there is a preceding element.",
+      "properties": {
+        "thickness": {
+          "type": "string",
+          "description": "Specifies separator thickness.",
+          "enum": [
+            "default",
+            "thick"
+          ]
+        },
+        "color": {
+          "type": "string",
+          "description": "Specifies separator color.",
+          "enum": [
+            "default",
+            "accent"
+          ]
+        }
+      }
+    },
+    "SpacingStyle": {
+      "type": "string",
+      "description": "Controls the amount of spacing between this element and the preceding element.",
+      "enum": [
+        "none",
+        "small",
+        "default",
+        "medium",
+        "large",
+        "extraLarge",
+        "padding"
+      ]
+    },
+    "Tab": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "Defines a container that is part of a TabSet.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"Tab\"`.",
+          "enum": [
+            "Tab"
+          ]
+        },
+        "items": {
+          "description": "The card elements to include in the `Tab`.",
+          "$ref": "#/definitions/CardElements"
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the `Tab`."
+        }
+      },
+      "required": [
+        "items",
+        "title"
+      ]
+    },
+    "TabSet": {
+      "additionalProperties": true,
+      "type": "object",
+      "description": "TabSet allows to display content through various tabs.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
+        }
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Must be `\"TabSet\"`.",
+          "enum": [
+            "TabSet"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "description": "A unique identifier associated with the element."
+        },
+        "tabs": {
           "type": "array",
+          "description": "The array of `Tabs` to divide content.",
           "items": {
-            "$ref": "#/definitions/TreeItem"
+            "$ref": "#/definitions/Tab"
           }
         }
       },
       "required": [
-        "label"
+        "id"
       ]
     },
     "Table": {
@@ -2338,41 +2522,6 @@
         "text"
       ]
     },
-    "SeparatorStyle": {
-      "type": "object",
-      "description": "Indicates whether there should be a visible separator (i.e. a line) between the element and its predecessor. If not specified, no separator is displayed. A separator will only be displayed if there is a preceding element.",
-      "properties": {
-        "thickness": {
-          "type": "string",
-          "description": "Specifies separator thickness.",
-          "enum": [
-            "default",
-            "thick"
-          ]
-        },
-        "color": {
-          "type": "string",
-          "description": "Specifies separator color.",
-          "enum": [
-            "default",
-            "accent"
-          ]
-        }
-      }
-    },
-    "SpacingStyle": {
-      "type": "string",
-      "description": "Controls the amount of spacing between this element and the preceding element.",
-      "enum": [
-        "none",
-        "small",
-        "default",
-        "medium",
-        "large",
-        "extraLarge",
-        "padding"
-      ]
-    },
     "TextInputStyle": {
       "type": "string",
       "default": "text",
@@ -2384,100 +2533,15 @@
         "email"
       ]
     },
-    "Jumbotron": {
+    "Tree": {
       "additionalProperties": true,
       "type": "object",
-      "description": "An element typically placed at the top of a card to describe its purpose.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Jumbotron\"`.",
-          "enum": [
-            "Jumbotron"
-          ]
-        },
-        "title": {
-          "type": "string",
-          "description": "Text to be displayed as heading."
-        },
-        "subtitle": {
-          "type": "string",
-          "description": "Text to be displayed as subheading."
-        },
-        "wash": {
-          "type": "string",
-          "enum": [
-            "white",
-            "black"
-          ],
-          "description": "Type of wash to have over the background."
-        },
-        "backgroundImage": {
-          "type": "string",
-          "description": "Relative URL to image to be displayed as background."
+      "description": "Displays some information in a tree format.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/CardElement"
         }
-      },
-      "required": [
-        "type",
-        "title"
-      ]
-    },
-    "Chip": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "A chip to display some text.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Chip\"`.",
-          "enum": [
-            "Chip"
-          ]
-        },
-        "text": {
-          "type": "string",
-          "description": "Text to be displayed in chip."
-        },
-        "color": {
-          "type": "string",
-          "description": "Color of the chip"
-        }
-      },
-      "required": [
-        "type",
-        "text"
-      ]
-    },
-    "Collapsible": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "A container which expands when clicked on to show a card.",
-      "properties": {
-        "type": {
-          "type": "string",
-          "description": "Must be `\"Collapsible\"`.",
-          "enum": [
-            "Collapsible"
-          ]
-        },
-        "title": {
-          "type": "string",
-          "description": "Text to be displayed as label."
-        },
-        "card": {
-          "$ref": "#/definitions/AdaptiveCard"
-        }
-      },
-      "required": [
-        "type",
-        "title",
-        "card"
-      ]
-    },
-    "CardList": {
-      "additionalProperties": true,
-      "type": "object",
-      "description": "A container which opens a modal when clicked on to show a card.",
+      ],
       "properties": {
         "id": {
           "type": "string",
@@ -2485,32 +2549,37 @@
         },
         "type": {
           "type": "string",
-          "description": "Must be `\"CardList\"`.",
+          "description": "Must be `\"Tree\"`.",
           "enum": [
-            "CardList"
+            "Tree"
           ]
         },
-        "addButtonLabel": {
-          "type": "string",
-          "description": "Text to be displayed as label of button."
-        },
-        "card": {
-          "$ref": "#/definitions/AdaptiveCard"
-        },
-        "instanceTitleTemplate": {
-          "type": "string",
-          "description": "A handlebars-like template for conjuring a title per instance."
-        },
-        "instanceSubtitleTemplate": {
-          "type": "string",
-          "description": "A handlebars-like template for conjuring a subtitle per instance."
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TreeItem"
+          }
         }
       },
       "required": [
         "id",
-        "type",
-        "title",
-        "card"
+        "type"
+      ]
+    },
+    "TreeItem": {
+      "type": "object",
+      "description": "Nodes belonging to a tree structure",
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "Title displayed for the tree item."
+        },
+        "children": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "label"
       ]
     }
   }
