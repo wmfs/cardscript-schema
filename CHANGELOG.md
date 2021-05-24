@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/wmfs/cardscript-schema/compare/v1.29.0...v1.29.1) (2021-05-24)
+
+
+### 🐛 Bug Fixes
+
+* CardElements can include Actions ([d2e9de2](https://github.com/wmfs/cardscript-schema/commit/d2e9de294eeada49855145c94b9a6f59f645083e))
+
 # [1.29.0](https://github.com/wmfs/cardscript-schema/compare/v1.28.0...v1.29.0) (2021-05-24)
 
 
