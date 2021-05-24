@@ -562,6 +562,9 @@
               "$ref": "#/definitions/TextBlock"
             },
             {
+              "$ref": "#/definitions/MarkupTable"
+            },
+            {
               "$ref": "#/definitions/Table"
             },
             {
@@ -2122,7 +2125,32 @@
         "showLaunches": {
           "type": "boolean",
           "description": "Whether or not to show a menu of actions.",
-          "default": "false"
+          "default": false
+        },
+        "orientation": {
+          "type": "string",
+          "description": "The orientation of the table layout (headers to go across or down).",
+          "enum": [
+            "horizontal",
+            "vertical"
+          ],
+          "default": "horizontal"
+        },
+        "separator": {
+          "type": "string",
+          "description": "How the rows should be separated with borders",
+          "enum": [
+            "horizontal",
+            "vertical",
+            "cell",
+            "none"
+          ],
+          "default": "horizontal"
+        },
+        "fixedHeader": {
+          "type": "boolean",
+          "description": "Whether the header is fixed when scrolling",
+          "default": false
         },
         "selectionType": {
           "type": "string",
