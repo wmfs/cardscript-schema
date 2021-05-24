@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/wmfs/cardscript-schema/compare/v1.28.0...v1.29.0) (2021-05-24)
+
+
+### ✨ Features
+
+* add MarkupTable to CardElements ([e2f3faa](https://github.com/wmfs/cardscript-schema/commit/e2f3faabdc3971a670964466105a472ed1e65094))
+
 # [1.28.0](https://github.com/wmfs/cardscript-schema/compare/v1.27.0...v1.28.0) (2021-05-13)
 
 
