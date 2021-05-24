@@ -559,6 +559,9 @@
         {
           "anyOf": [
             {
+              "$ref": "#/definitions/Action"
+            },
+            {
               "$ref": "#/definitions/TextBlock"
             },
             {
