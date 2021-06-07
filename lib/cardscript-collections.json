@@ -1,0 +1,10 @@
+{
+  "Container": "items",
+  "TabSet": "tabs",
+  "Tab": "items",
+  "ColumnSet": "columns",
+  "Column": "items",
+  "Collapsible": "card.body",
+  "ImageSet": "images",
+  "AdaptiveCard": "body"
+}
