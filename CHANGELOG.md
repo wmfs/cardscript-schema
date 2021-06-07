@@ -1,3 +1,15 @@
+# [1.30.0](https://github.com/wmfs/cardscript-schema/compare/v1.29.1...v1.30.0) (2021-06-07)
+
+
+### ✨ Features
+
+* export collections and their array paths to be used as reference for consistency ([2e1e069](https://github.com/wmfs/cardscript-schema/commit/2e1e069e227499d90c2e84727d49a8c8e7952c91))
+
+
+### 💎 Styles
+
+* standard --fix ([c7ab407](https://github.com/wmfs/cardscript-schema/commit/c7ab4076bbcd96e12d908306954efbcc67bbb08b))
+
 ## [1.29.1](https://github.com/wmfs/cardscript-schema/compare/v1.29.0...v1.29.1) (2021-05-24)
 
 
