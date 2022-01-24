@@ -2,9 +2,13 @@
   "Container": "items",
   "TabSet": "tabs",
   "Tab": "items",
+  "Stepper": "steps",
+  "Step": "items",
   "ColumnSet": "columns",
   "Column": "items",
   "Collapsible": "card.body",
   "ImageSet": "images",
-  "AdaptiveCard": "body"
+  "AdaptiveCard": "body",
+  "FactSet": "facts",
+  "CardList": "card.body"
 }
