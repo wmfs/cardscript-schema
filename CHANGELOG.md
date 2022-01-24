@@ -1,3 +1,42 @@
+# [1.31.0](https://github.com/wmfs/cardscript-schema/compare/v1.30.0...v1.31.0) (2022-01-24)
+
+
+### ✨ Features
+
+* add new stepper component ([c3fa7ef](https://github.com/wmfs/cardscript-schema/commit/c3fa7efaf49149989e020b6277dab01a1b29fc98))
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump codecov from 3.8.2 to 3.8.3 ([3628d01](https://github.com/wmfs/cardscript-schema/commit/3628d011dfb14bf14162a0eaa966a17efe2d858d))
+* **deps-dev:** bump mocha from 8.4.0 to 9.0.0 ([276a0a3](https://github.com/wmfs/cardscript-schema/commit/276a0a389964921d6c43c7b2a5bda989ef293d9f))
+* **deps-dev:** bump mocha from 9.0.0 to 9.0.1 ([4de7929](https://github.com/wmfs/cardscript-schema/commit/4de792924f4478d94d8e1ac43e0148965069110d))
+* **deps-dev:** bump mocha from 9.0.1 to 9.0.2 ([448d872](https://github.com/wmfs/cardscript-schema/commit/448d872f9a9a49dc405f5376d576c331685cbb64))
+* **deps-dev:** bump mocha from 9.0.2 to 9.0.3 ([37d5152](https://github.com/wmfs/cardscript-schema/commit/37d51524e4f53e6b13f51479c87df14bfc4584c2))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([ae22435](https://github.com/wmfs/cardscript-schema/commit/ae224358d61eb15cf80f33c88d3afd83950e8dd5))
+* **deps-dev:** pin dependency [@wmfs](https://github.com/wmfs)/cardscript-examples to 1.22.0 ([18d7611](https://github.com/wmfs/cardscript-schema/commit/18d7611dc0eba52958e9ced406ca610cafcadffb))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6 ([01401ca](https://github.com/wmfs/cardscript-schema/commit/01401caef65bf55e6525b16188c4d637811408d0))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v10 ([42845b0](https://github.com/wmfs/cardscript-schema/commit/42845b0270d3b9e412891a11fc5418e77dfa6ef6))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([bee0aec](https://github.com/wmfs/cardscript-schema/commit/bee0aec281e7210984f5cfb1c964a427933e8f72))
+* **deps-dev:** update dependency mocha to v9.1.0 ([c7d97c1](https://github.com/wmfs/cardscript-schema/commit/c7d97c1998536ae04dc28efd61d84e485f749ebf))
+* **deps-dev:** update dependency mocha to v9.1.1 ([c05001f](https://github.com/wmfs/cardscript-schema/commit/c05001f07d2be57f0e2d188b16b5200a98adffb2))
+* **deps-dev:** update dependency mocha to v9.1.2 ([30d4db7](https://github.com/wmfs/cardscript-schema/commit/30d4db79f7bc54cff00941227d66e794d301624c))
+* **deps-dev:** update dependency mocha to v9.1.3 ([582e7de](https://github.com/wmfs/cardscript-schema/commit/582e7de06295a43a130cf1598e76f885257b73ae))
+* **deps-dev:** update dependency mocha to v9.1.4 ([f3e565b](https://github.com/wmfs/cardscript-schema/commit/f3e565bc5acc7df9f3743a8bb3f5fc43ed0c8e35))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([fb2fd06](https://github.com/wmfs/cardscript-schema/commit/fb2fd06ed6f40c49ea19cd9330e34a3cb5eb5d87))
+* **deps-dev:** update dependency semantic-release to v17.4.6 ([bbe0990](https://github.com/wmfs/cardscript-schema/commit/bbe0990317fe8749525fc043b975159f84aa6609))
+* **deps-dev:** update dependency semantic-release to v17.4.7 ([6b90315](https://github.com/wmfs/cardscript-schema/commit/6b903150b834b3e9d288ee1d10a0552b55d64b4e))
+* **deps-dev:** update dependency semantic-release to v18 ([6616e56](https://github.com/wmfs/cardscript-schema/commit/6616e5695250475db9642015049f5c96a2d033de))
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([63c73ad](https://github.com/wmfs/cardscript-schema/commit/63c73ad82c28fb7415778ffc277b7c72fa2bda1a))
+* **deps-dev:** update dependency semantic-release to v19 ([c13a7cc](https://github.com/wmfs/cardscript-schema/commit/c13a7cc47d93daf5b2b27485c2f36ca78df0d501))
+* **deps-dev:** update dependency standard to v16.0.4 ([92a1db6](https://github.com/wmfs/cardscript-schema/commit/92a1db68169652dcf921a6a390c4c8e098e93371))
+* **deps-dev:** update semantic-release monorepo ([37589ae](https://github.com/wmfs/cardscript-schema/commit/37589ae12680eebf20185eeede052b1b978f6f84))
+
+
+### ♻️ Chores
+
+* add renovate config [ch6600] ([dd7446a](https://github.com/wmfs/cardscript-schema/commit/dd7446a8d6fdc2c4fe20c896c05506d9d5705f8e))
+
 # [1.30.0](https://github.com/wmfs/cardscript-schema/compare/v1.29.1...v1.30.0) (2021-06-07)
 
 
