@@ -1,3 +1,18 @@
+# [1.32.0](https://github.com/wmfs/cardscript-schema/compare/v1.31.0...v1.32.0) (2022-07-06)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency chai to v4.3.5 ([76fa50f](https://github.com/wmfs/cardscript-schema/commit/76fa50f360fcaaa424c533567bf0ca36391a8072))
+* **deps-dev:** update dependency chai to v4.3.6 ([f7c1ead](https://github.com/wmfs/cardscript-schema/commit/f7c1ead41ad5b2f61953656989de641b45c40600))
+* **deps-dev:** update dependency mocha to v10 ([0c66623](https://github.com/wmfs/cardscript-schema/commit/0c6662393fb27837366bd10f3590db524c41e904))
+* **deps-dev:** update dependency mocha to v9.2.0 ([58635a5](https://github.com/wmfs/cardscript-schema/commit/58635a58f3a5e52b131370a4068bd43e2bff169d))
+* **deps-dev:** update dependency mocha to v9.2.1 ([6b7cede](https://github.com/wmfs/cardscript-schema/commit/6b7cede4aaf916ce87e21ec15d13bf34a87e986c))
+* **deps-dev:** update dependency mocha to v9.2.2 ([4b0e9a8](https://github.com/wmfs/cardscript-schema/commit/4b0e9a8623fede29b97bac8e89557a0d86eb2b9e))
+* **deps-dev:** update dependency semantic-release to v19.0.3 ([b3649b2](https://github.com/wmfs/cardscript-schema/commit/b3649b25936bdf09f9d76c99eb9d1f4b873984c5))
+* **deps-dev:** update dependency standard to v17 ([51aacfe](https://github.com/wmfs/cardscript-schema/commit/51aacfe14de31dd177c6b750eb88e53ae017b273))
+* **deps:** update dependency jsonschema to v1.4.1 ([04202d8](https://github.com/wmfs/cardscript-schema/commit/04202d895cc2dcefa7921d6e262c9bb11b033057))
+
 # [1.31.0](https://github.com/wmfs/cardscript-schema/compare/v1.30.0...v1.31.0) (2022-01-24)
 
 
