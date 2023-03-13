@@ -1,3 +1,23 @@
+# [1.33.0](https://github.com/wmfs/cardscript-schema/compare/v1.32.0...v1.33.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.2 ([5a0f8fe](https://github.com/wmfs/cardscript-schema/commit/5a0f8fe3f4a16d5914e88c2a84c1f1db9f8cb727))
+* **deps-dev:** update dependency chai to v4.3.7 ([8d028ff](https://github.com/wmfs/cardscript-schema/commit/8d028ffd82cac13918b28dde6d37415fb4ab4f35))
+* **deps-dev:** update dependency mocha to v10.1.0 ([7a07db1](https://github.com/wmfs/cardscript-schema/commit/7a07db1b5b8125c17ef616dc12cbbe82604e2c0f))
+* **deps-dev:** update dependency mocha to v10.2.0 ([6d352cb](https://github.com/wmfs/cardscript-schema/commit/6d352cba043469a8c3126ee32b91db73a7b639d4))
+* **deps-dev:** update dependency semantic-release to v19.0.4 ([1ae5dd7](https://github.com/wmfs/cardscript-schema/commit/1ae5dd7ba3cb8c2952582f097b482f29415caa2d))
+* **deps-dev:** update dependency semantic-release to v19.0.5 ([30e8d71](https://github.com/wmfs/cardscript-schema/commit/30e8d71241683285e4278aa47af3b143c9169ff8))
+* **deps-dev:** update dependency semantic-release to v20 ([35c92e5](https://github.com/wmfs/cardscript-schema/commit/35c92e51e6d0bef06e00f5e7ebcaeb4717ca5f22))
+* **deps-dev:** update dependency semantic-release to v20.0.1 ([fcacdee](https://github.com/wmfs/cardscript-schema/commit/fcacdee830d2ae1d810226f8f17552c429505e4e))
+* **deps-dev:** update dependency semantic-release to v20.0.2 ([b6d9d49](https://github.com/wmfs/cardscript-schema/commit/b6d9d4951f1ffc5a39ccbc46e6bd56e7f2fe3b20))
+* **deps-dev:** update dependency semantic-release to v20.0.3 ([a2a8625](https://github.com/wmfs/cardscript-schema/commit/a2a86259d655a1bfa9efef9065641b06f75d1302))
+* **deps-dev:** update dependency semantic-release to v20.0.4 ([3fa1e30](https://github.com/wmfs/cardscript-schema/commit/3fa1e302392f1daa8df2d8fd65c914bfca1650dc))
+* **deps-dev:** update dependency semantic-release to v20.1.0 ([1ccc6a6](https://github.com/wmfs/cardscript-schema/commit/1ccc6a65160bbb3d09630e1d54a8ccded5c1a2b3))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([7d1a19f](https://github.com/wmfs/cardscript-schema/commit/7d1a19f79d21079888875f83aa517e84973e9570))
+* **deps:** update dependency dottie to v2.0.3 ([1ca026c](https://github.com/wmfs/cardscript-schema/commit/1ca026cb170179358ab7e238a0c1e2c53925f7a1))
+
 # [1.32.0](https://github.com/wmfs/cardscript-schema/compare/v1.31.0...v1.32.0) (2022-07-06)
 
 
