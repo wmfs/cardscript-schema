@@ -1,3 +1,18 @@
+# [1.34.0](https://github.com/wmfs/cardscript-schema/compare/v1.33.0...v1.34.0) (2023-06-20)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.3 ([5cea179](https://github.com/wmfs/cardscript-schema/commit/5cea1792a85e501996e8cef0ef204ccaa1b577f7))
+* **deps-dev:** update dependency semantic-release to v20.1.3 ([7eabb97](https://github.com/wmfs/cardscript-schema/commit/7eabb97aee919cfa477ed80a0eed43cd715ede09))
+* **deps-dev:** update dependency semantic-release to v21 ([b244741](https://github.com/wmfs/cardscript-schema/commit/b2447412757e8c88733b9ec89e6b509384f5e8c7))
+* **deps-dev:** update dependency semantic-release to v21.0.1 ([a7417b9](https://github.com/wmfs/cardscript-schema/commit/a7417b9a4374e9604c874693a623d4287beb6f10))
+* **deps-dev:** update dependency semantic-release to v21.0.2 ([ad64916](https://github.com/wmfs/cardscript-schema/commit/ad6491629a8dc3196893f914443b858ed871362c))
+* **deps-dev:** update dependency semantic-release to v21.0.3 ([36afb89](https://github.com/wmfs/cardscript-schema/commit/36afb89d6fe197998c45ec82dc8d5e692590261d))
+* **deps-dev:** update dependency semantic-release to v21.0.5 ([3ec4644](https://github.com/wmfs/cardscript-schema/commit/3ec4644465a26e687f20d29798a041bafce390c3))
+* **deps-dev:** update dependency standard to v17.1.0 ([a448a47](https://github.com/wmfs/cardscript-schema/commit/a448a47a9e70b70378def1bcdd09111635ac922e))
+* **deps:** update dependency dottie to v2.0.4 [security] ([f5a11a1](https://github.com/wmfs/cardscript-schema/commit/f5a11a1cbf0e3f0ca6fc15b8fdb80c7c90fb02b5))
+
 # [1.33.0](https://github.com/wmfs/cardscript-schema/compare/v1.32.0...v1.33.0) (2023-03-13)
 
 
