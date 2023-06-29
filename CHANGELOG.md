@@ -1,3 +1,11 @@
+# [1.35.0](https://github.com/wmfs/cardscript-schema/compare/v1.34.0...v1.35.0) (2023-06-29)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency semantic-release to v21.0.6 ([536c708](https://github.com/wmfs/cardscript-schema/commit/536c7081744e4451ddeaf96881adf11346473987))
+* **deps:** update dependency dottie to v2.0.6 ([7b36cf0](https://github.com/wmfs/cardscript-schema/commit/7b36cf08fb009f0791d1ef2f9d965e5864f2a024))
+
 # [1.34.0](https://github.com/wmfs/cardscript-schema/compare/v1.33.0...v1.34.0) (2023-06-20)
 
 
