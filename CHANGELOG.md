@@ -1,3 +1,10 @@
+## [1.37.0](https://github.com/wmfs/cardscript-schema/compare/v1.36.0...v1.37.0) (2025-02-04)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency mocha to v11.1.0 ([#272](https://github.com/wmfs/cardscript-schema/issues/272)) ([12abe5f](https://github.com/wmfs/cardscript-schema/commit/12abe5f4c9e668c9347bf5eaee103b6ab2bb3477))
+* **deps:** revert jsonschema to 1.4.1 ([b04e62a](https://github.com/wmfs/cardscript-schema/commit/b04e62a4e44ab9edd37b7a04dfa599051a73f613))
+
 ## [1.36.0](https://github.com/wmfs/cardscript-schema/compare/v1.35.0...v1.36.0) (2025-01-08)
 
 ### Build system dependencies :hammer:
