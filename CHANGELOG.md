@@ -1,3 +1,5 @@
+## [1.38.1](https://github.com/wmfs/cardscript-schema/compare/v1.38.0...v1.38.1) (2026-08-14)
+
 ## [1.38.0](https://github.com/wmfs/cardscript-schema/compare/v1.37.0...v1.38.0) (2025-10-21)
 
 ### Build system dependencies :hammer:
