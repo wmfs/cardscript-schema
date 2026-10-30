@@ -1,3 +1,24 @@
+## [1.39.0](https://github.com/wmfs/cardscript-schema/compare/v1.38.1...v1.39.0) (2026-10-30)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([4ed1353](https://github.com/wmfs/cardscript-schema/commit/4ed135384478e883fc8ecf3ae107aa40b3403c50))
+* **deps-dev:** update dependency @wmfs/cardscript-examples to v1.23.1 ([#331](https://github.com/wmfs/cardscript-schema/issues/331)) ([eb69cd0](https://github.com/wmfs/cardscript-schema/commit/eb69cd03014195b10590befe0b0e860ad152a915))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#332](https://github.com/wmfs/cardscript-schema/issues/332)) ([2d43d15](https://github.com/wmfs/cardscript-schema/commit/2d43d158f9d184d9cee4d1abb9a93a88a088f83d))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#337](https://github.com/wmfs/cardscript-schema/issues/337)) ([c600742](https://github.com/wmfs/cardscript-schema/commit/c600742ffd7cb4c33a02ecd59aa566b124da091a))
+* **deps-dev:** update dependency mocha to v12 ([#333](https://github.com/wmfs/cardscript-schema/issues/333)) ([716f4f0](https://github.com/wmfs/cardscript-schema/commit/716f4f020e1640cb70f0565c366d1fecf40b101e))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#334](https://github.com/wmfs/cardscript-schema/issues/334)) ([ae47873](https://github.com/wmfs/cardscript-schema/commit/ae47873735b34c7ac0f29d05b84e71207221df8a))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#335](https://github.com/wmfs/cardscript-schema/issues/335)) ([1f95d13](https://github.com/wmfs/cardscript-schema/commit/1f95d1390d72509627d7ae215c67d4a2176cd1d6))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#336](https://github.com/wmfs/cardscript-schema/issues/336)) ([2d20572](https://github.com/wmfs/cardscript-schema/commit/2d20572ae8a6c95bcbef7995aa3f2170993974d6))
+* **deps:** Add missing dependencies [sc-33852] ([#338](https://github.com/wmfs/cardscript-schema/issues/338)) ([0f0280b](https://github.com/wmfs/cardscript-schema/commit/0f0280bb0f67ff17785fc341acb3de150f8a3716))
+* **deps:** update dependency dottie to v2.0.7 [security] ([#310](https://github.com/wmfs/cardscript-schema/issues/310)) ([35e6c3f](https://github.com/wmfs/cardscript-schema/commit/35e6c3f86be6db4701542cec89e433ac03f9ae1c))
+* **deps:** update dependency lodash to v4.18.1 [security] ([#305](https://github.com/wmfs/cardscript-schema/issues/305)) ([5e893be](https://github.com/wmfs/cardscript-schema/commit/5e893be68ed96e49461e17a15024eefc2535183c))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#340](https://github.com/wmfs/cardscript-schema/issues/340)) ([5c7e6ed](https://github.com/wmfs/cardscript-schema/commit/5c7e6edf854a1027ef2de96b54b55bb6c9f50901))
+* use shared renovate preset [sc-34117] ([#339](https://github.com/wmfs/cardscript-schema/issues/339)) ([2700cdc](https://github.com/wmfs/cardscript-schema/commit/2700cdc5b56201446acc3a35192bc7e882506e29))
+
 ## [1.38.1](https://github.com/wmfs/cardscript-schema/compare/v1.38.0...v1.38.1) (2026-08-14)
 
 ## [1.38.0](https://github.com/wmfs/cardscript-schema/compare/v1.37.0...v1.38.0) (2025-10-21)
