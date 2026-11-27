@@ -1248,6 +1248,20 @@
           "description": "Show maps: results on a map, the chosen address and a pin on manual entry.",
           "default": true
         },
+        "markerClick": {
+          "type": "string",
+          "enum": [
+            "confirm",
+            "select"
+          ],
+          "description": "What clicking a marker on the results map does. `confirm` shows the address with a button to choose it; `select` chooses it straight away.",
+          "default": "confirm"
+        },
+        "markerActionLabel": {
+          "type": "string",
+          "description": "Wording of the button in the marker popup when markerClick is `confirm`.",
+          "default": "Choose this address"
+        },
         "allowManualEntry": {
           "type": "boolean",
           "description": "Show 'I can't find the address' and let the user enter it by hand.",
