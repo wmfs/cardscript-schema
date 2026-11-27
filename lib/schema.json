@@ -942,10 +942,11 @@
         },
         "style": {
           "type": "string",
-          "description": "Style hint for `Container`.",
+          "description": "Style hint for `Container`. `callout` is a light panel with a coloured bar on the left, coloured by `color` (accent, good, warning, attention, light, dark).",
           "enum": [
             "default",
-            "emphasis"
+            "emphasis",
+            "callout"
           ]
         },
         "verticalContentAlignment": {
@@ -983,6 +984,14 @@
         "value": {
           "type": "string",
           "description": "The value of the fact."
+        },
+        "emphasis": {
+          "type": "boolean",
+          "description": "In a grid FactSet, shows the value large and bold."
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "In a grid FactSet, a muted line under the value."
         }
       },
       "required": [
@@ -1013,6 +1022,15 @@
           "enum": [
             "FactSet"
           ]
+        },
+        "layout": {
+          "type": "string",
+          "description": "`list` (default) stacks facts. `grid` shows them side by side: 3 across on wide screens, 2 on tablets, 1 on phones.",
+          "enum": [
+            "list",
+            "grid"
+          ],
+          "default": "list"
         }
       },
       "required": [
@@ -2117,6 +2135,27 @@
               "value": {
                 "type": "string",
                 "description": "Points to the data to be displayed in the column."
+              },
+              "subtitle": {
+                "type": "string",
+                "description": "A muted second line under the value."
+              },
+              "align": {
+                "type": "string",
+                "enum": [
+                  "left",
+                  "right",
+                  "center"
+                ],
+                "description": "Text alignment for the column. Use right for numbers."
+              },
+              "width": {
+                "type": "string",
+                "description": "CSS width for the column, e.g. \"80px\" or \"40%\"."
+              },
+              "emphasis": {
+                "type": "boolean",
+                "description": "Shows the column's values in bold."
               }
             },
             "required": [
