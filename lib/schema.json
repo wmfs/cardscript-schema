@@ -1167,7 +1167,7 @@
     "Input.Address": {
       "additionalProperties": true,
       "type": "object",
-      "description": "Lets a user enter an address.",
+      "description": "Lets a user find an address in the gazetteer, or enter one by hand. Writes the selected UPRN to `id`, plus addressLabel, selectedAddress, cannotFindAddress and the manual entry fields (all prefixed with `idPrefix_` when set).",
       "allOf": [
         {
           "$ref": "#/definitions/CardElement"
@@ -1176,7 +1176,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier for the value. Used to identify collected input when the Submit action is performed."
+          "description": "Where the selected UPRN is written. Used to identify collected input when the Submit action is performed."
         },
         "type": {
           "type": "string",
@@ -1184,6 +1184,116 @@
           "enum": [
             "Input.Address"
           ]
+        },
+        "idPrefix": {
+          "type": "string",
+          "description": "Prefix for the other values the picker writes, e.g. `home` gives `home_cannotFindAddress`. Use when a card has more than one address picker."
+        },
+        "title": {
+          "type": "string",
+          "description": "Label for the search box.",
+          "default": "Find the address"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Hint under the label. Use an empty string to hide it.",
+          "default": "Start typing a postcode, street, building name or UPRN."
+        },
+        "placeholder": {
+          "type": "string",
+          "description": "Placeholder text in the search box."
+        },
+        "searchEndpoint": {
+          "type": "string",
+          "description": "State machine that runs the search.",
+          "default": "wmfs_addressPickerSearch_1_0"
+        },
+        "detailsEndpoint": {
+          "type": [
+            "string",
+            "boolean"
+          ],
+          "description": "State machine that returns property details (masking number, classification, status, hierarchy) once an address is chosen. Set to false to turn off.",
+          "default": "wmfs_addressPickerDetails_1_0"
+        },
+        "searchFields": {
+          "type": [
+            "string",
+            "array"
+          ],
+          "description": "Search fields to pass to the search endpoint."
+        },
+        "resultsPerPage": {
+          "type": "integer",
+          "description": "Results shown per page (1 to 50).",
+          "default": 8
+        },
+        "tooManyResults": {
+          "type": "integer",
+          "description": "Above this many matches, the user is asked to narrow the search instead of seeing results.",
+          "default": 500
+        },
+        "searchAsYouType": {
+          "type": "boolean",
+          "description": "Search as the user types (3 or more characters), as well as on Enter and the Search button.",
+          "default": true
+        },
+        "allowGeoLocation": {
+          "type": "boolean",
+          "description": "Show 'Use my current location'.",
+          "default": true
+        },
+        "showMap": {
+          "type": "boolean",
+          "description": "Show maps: results on a map, the chosen address and a pin on manual entry.",
+          "default": true
+        },
+        "markerClick": {
+          "type": "string",
+          "enum": [
+            "confirm",
+            "select"
+          ],
+          "description": "What clicking a marker on the results map does. `confirm` shows the address with a button to choose it; `select` chooses it straight away.",
+          "default": "confirm"
+        },
+        "markerActionLabel": {
+          "type": "string",
+          "description": "Wording of the button in the marker popup when markerClick is `confirm`.",
+          "default": "Choose this address"
+        },
+        "allowManualEntry": {
+          "type": "boolean",
+          "description": "Show 'I can't find the address' and let the user enter it by hand.",
+          "default": true
+        },
+        "manualEntryTitle": {
+          "type": "string",
+          "description": "Heading for manual entry.",
+          "default": "Enter the address"
+        },
+        "manualEntryNotice": {
+          "type": "string",
+          "description": "Notice shown above manual entry. Use an empty string to hide it."
+        },
+        "manualEntryFields": {
+          "type": "array",
+          "description": "Fields for manual entry, in order. Each is a key (buildingName, addressLine1, addressLine2, townOrCity, county, postcode) or an object with key and optional title, hint, required, postcode and message.",
+          "default": [
+            "addressLine1",
+            "addressLine2",
+            "townOrCity",
+            "county",
+            "postcode"
+          ]
+        },
+        "onSelectionEndpoint": {
+          "type": "object",
+          "description": "State machine to run when an address is chosen: `name` and optional `params` ({{ }} templates against data). Its output is merged into the card data."
+        },
+        "validation": {
+          "type": "object",
+          "description": "`required` (default true), `requiredIf` (expression) and `message`."
         }
       },
       "required": [
